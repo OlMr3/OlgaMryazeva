@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        a{color: green;}
+        a:hover{color: red;}
+        .way1 ul li {
+            list-style-type: none;
+            float: left;
+        }
+
+        .way1 ul li:first-child {
+            padding: 5px 10px 5px 15px;
+        }
+
+        .way1 ul li:nth-child(1n+2) {
+            border-left: solid 2px red;
+            padding: 5px 10px 5px 19px;
+        }
+     .way2 ul li {
+            list-style-type: none;
+            float: left;
+        }
+        .way2 ul li:first-child {
+            padding: 5px 11px 5px 15px;
+            
+        }
+
+        .way2 ul li:nth-child(1n+2) {
+            background: url('border.jpg') no-repeat left;
+            padding: 5px 12px 5px 19px;
+        }
+        .way3 a{padding: 5px 7px 5px 17px;}
+        .way3 a:nth-child(1n+2){ border-left: solid 2px red;}
+        .way3 a:first-child{margin-left: 40px;}
+        .way4 a:first-child{ margin: 0px 7px 0px 55px;}
+        .way4 a:nth-child(1n+2){margin: 0px 6px 0px 15px;}
+        .way5 a:nth-child(1n+2){background: url('border.jpg') no-repeat left; padding: 5px 8px 5px 19px;}
+        .way5 a:first-child{padding: 5px 7px 5px 15px; margin-left: 40px;}
+        .way6 p{float: left; padding: 5px 8px 5px 22px;}
+        .way6 p:nth-child(1n+2){border-left: solid 2px red;}
+        .way6 p:first-child{margin-left: 35px;}
+        .way7 div{float: left;}
+        .way7 div:nth-of-type(even){width: 2px;height: 30px; background-color: red; margin-right: 20px;margin-left: 9px;}
+        
+        .way7 div:first-child{margin-left: 55px;}
+        
+        
+    </style>
+</head>
+
+<body>
+    <div class="way1">
+        <!--С помощью списка, нужно убирать значки списка,нужно добавить свойство float: left.  Разделители с помощью бордера, отталкивать содержимое от бордера нужно паддингами-->
+        <ul>
+            <li><a href="">первая ссылка</a></li>
+            <li><a href="">вторая ссылка</a></li>
+            <li><a href="">третья ссылка</a></li>
+            <li><a href="">четвертая ссылка</a></li>
+            <li><a href="">пятая ссылка</a></li>
+        </ul>
+    </div><br><br>
+    <div class="way2">
+        <!--С помощью списка, нужно убирать значки списка, нужно добавить свойство float: left. Разделители с помощью background-image, но нужно заготовить картинку-полоску 2х30 пикселей. Отталкиваться от картинки нужно паддингами и у первого элемента списка будет другой правый паддинг, чтобы полоски получились одинаковыми -->
+        <ul>
+            <li><a href="">первая ссылка</a></li>
+            <li> <a href="">вторая ссылка</a></li>
+            <li> <a href="">третья ссылка</a></li>
+            <li> <a href="">четвертая ссылка</a></li>
+            <li> <a href="">пятая ссылка</a></li>
+        </ul>
+    </div><br><br><br>
+    <div class="way3"> <!--С помощью тегов а, т.к. это строчный элемент, то свойство float: left добавлять не нужно. Разделители с помощью левого бордера у всех элементов, кроме первого,отталкиваться от них паддингами.-->
+        <a href="">первая ссылка</a>
+        <a href="">вторая ссылка</a>
+        <a href="">третья ссылка</a>
+        <a href="">четвертая ссылка</a>
+        <a href="">пятая ссылка</a>
+    </div><br>
+    <div class="way4"> <!--С помощью тегов а. Разделители - заготовленная ранее картинка. Недостаток в том, что выглядит не так как хотелось бы-->
+        <a href="">первая ссылка</a>
+        <img src="border.jpg" alt="бордер">
+        <a href="">вторая ссылка</a>
+        <img src="border.jpg" alt="бордер">
+        <a href="">третья ссылка</a>
+        <img src="border.jpg" alt="бордер">
+        <a href="">четвертая ссылка</a>
+        <img src="border.jpg" alt="бордер">
+        <a href="">пятая ссылка</a>
+    </div><br>
+    <div class="way5"> <!--С помощью тегов а. Разделитель - background-image с заготовленной картинкой -->
+        <a href="">первая ссылка</a>
+        <a href="">вторая ссылка</a>
+        <a href="">третья ссылка</a>
+        <a href="">четвертая ссылка</a>
+        <a href="">пятая ссылка</a>
+    </div><br>
+    <div class="way6"> <!--С помощью тегов р и разделителя бордера, также можно сделать с помощью картинки между тегами или бэкграунда-->
+        <p><a href="">первая ссылка</a></p>
+        <p><a href="">вторая ссылка</a></p>
+        <p><a href="">третья ссылка</a></p>
+        <p><a href="">четвертая ссылка</a></p>
+        <p><a href="">пятая ссылка</a></p>
+    </div>
+    <div style="clear: both;"></div>
+    <div class="way7"> <!--С помощью div. Разделитель div с заданной шириной и высотой и красным бэкграундом. Для меня этот способ был самый быстрый, но недостаток в пустых дивах-->
+        <div><a href="">первая ссылка</a></div>
+        <div></div>
+        <div><a href="">вторая ссылка</a></div>
+        <div></div>
+        <div><a href="">третья ссылка</a></div>
+        <div></div>
+        <div><a href="">четвертая ссылка</a></div>
+        <div></div>
+        <div><a href="">пятая ссылка</a></div>
+    </div>
+</body>
+
+</html>
