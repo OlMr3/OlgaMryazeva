@@ -30,9 +30,9 @@
             text-decoration: none;
         }
 
-        p.inform>a {
-            background: url('extref.png') no-repeat left;
-            padding-left: 13px;
+        p.inform a::before {
+            content: url('extref.png');
+            margin-right: 5px;
         }
 
         p.article {
@@ -44,11 +44,16 @@
             font-weight: 900;
             color: blue;
         }
+        @media  print { 
+        p.inform a::before{content: "(Ссылка ";}
+        p.inform a::after{content: " на " attr(href) ")";}
+            
+        }
     </style>
 </head>
 
 <body>
-   
+    
     <div>
         <p class="name">Михаил Ботвинник</p>
         <p class="date">Дата рождения: 17 августа 1911 г.</p>
@@ -121,7 +126,9 @@
             пресс-конференции обвинил Кампоманеса, что тот решил прервать матч только тогда, когда претендент получил
             шансы на победу.</p>
     </div>
-    <p class="up"><a href="#top">в начало страницы</a></p>
+    <p class="up">
+        <a href="#top">в начало страницы</a>
+    </p>
 </body>
 
 </html>

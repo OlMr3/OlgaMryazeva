@@ -1,0 +1,10 @@
+@import 'defaultstyle.css';
+@import 'headStyle.css';
+@import 'glavStyle.css';
+@import 'clearfixStyle.css';
+@import 'menuStyle.css';
+@import 'bannerStyle.css';
+@import 'contentStyle.css';
+@import 'print.css' print;
+@import 'fouterStyle.css';
+@import 'media.css'

@@ -1,60 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="../base/css/adapt.css">
     <style>
-        *{margin: 0;
-        padding: 0;
-        box-sizing: border-box;}
-        div.head{text-align: center; padding: 20px; background-color: lightblue;}
-        div.bot{text-align: center; padding: 20px; background-color: lightblue;}
-        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
+        div.head {
+            text-align: center;
+            padding: 20px;
+            background-color: lightblue;
+        }
+
+        .wrap {
+            background: url(left.jpg) repeat-y top left;
+        }
+
+        .menu {
+            float: left;
+            width: 200px;
+        }
+
+        .menu h3 {
+            margin: 20px;
+        }
+
+        .menu ul {
+            margin: 20px 40px;
+            font-size: 20px;
+        }
+
+        .content {
+            background: url(ball2.png) repeat-y right top;
+            margin-left: 200px;
+        }
+
+        .content1 {
+            background-color: #ffffffcc;
+        }
+
+        .content1 h3 {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .content1 img {
+            float: left;
+            margin: 20px
+        }
+
+        .content1 p {
+            padding: 20px;
+            font-size: 20px;
+        }
+        div.bot {
+            text-align: center;
+            padding: 20px;
+            background-color: lightblue;
+        }
     </style>
 </head>
+
 <body>
     <div class="head">
         <h2 style="color: blue;">ПРИВЕТ УЧАСТНИКАМ СОРЕВНОВАНИЙ!</h2>
     </div>
-    <div style="background: url('left.jpg') repeat-y top left;">
-        <div style="width: 200px; float: left;">
-           <h3 style="margin: 20px;">ВИДЫ СПОРТА:</h3>
-            <ul style="margin: 20px 40px; font-size: 20px;">
-                <li> <a href="https://olympteka.ru/sport/speed_skating.html" target="_blank">конькобежный спорт </a></li>
+    <div class="wrap">
+        <div class="menu">
+            <h3>ВИДЫ СПОРТА:</h3>
+            <ul>
+                <li> <a href="https://olympteka.ru/sport/speed_skating.html" target="_blank">конькобежный спорт </a>
+                </li>
                 <li><a href="https://www.championat.com/biathlon/" target="_blank">биатлон</a></li>
                 <li><a href="https://www.championat.com/stat/football/#2024-10-27" target="_blank">футбол</a></li>
                 <li><a href="https://archeryclub.by/" target="_blank">стрельба из лука</a></li>
                 <li><a href="https://rsport.ria.ru/20230124/pryzhki-1846823304.html" target="_blank">прыжки в
-                    длину</a></li>
+                        длину</a></li>
                 <li><a href="https://world-sport.org/acyclic/jump_high/technology/" target="_blank">прыжки в
-                    высоту</a></li>
+                        высоту</a></li>
                 <li><a href="https://www.championat.com/figureskating/" target="_blank">фигурное катание</a></li>
                 <li><a href="https://www.championat.com/olympic/_synchroog.html" target="_blank">синхронное
-                    плавание</a></li>
+                        плавание</a></li>
                 <li><a href="https://ozon.by/category/shahmaty-13509/" target="_blank">шахматы</a></li>
-                <li><a href="https://www.funtastik.by/igrushki/hyq/nastolnaya-igra-shashki/"
-                    target="_blank">шашки</a></li>
-           </ul>
-           </div>
-           <div style="background: url(ball2.png) repeat-y right top; margin-left: 200px;">
-                <div style="background-color: #ffffffcc;">
-                    <h3 style="text-align: center; padding: 20px;">ФУТБОЛ</h3>
-                    <img src="football.jpg" alt="футбол" style="float: left; margin: 20px">
-                    <p style="padding: 20px; font-size: 20px;">Футбол &mdash; командный вид спорта, в котором целью является забить мяч в ворота соперника ногами
+                <li><a href="https://www.funtastik.by/igrushki/hyq/nastolnaya-igra-shashki/" target="_blank">шашки</a>
+                </li>
+            </ul>
+        </div>
+        <div class="content">
+            <div class="content1">
+                <h3>ФУТБОЛ</h3>
+                <img src="football.jpg" alt="футбол">
+                <p>Футбол &mdash; командный вид спорта, в котором целью является
+                    забить мяч в ворота соперника ногами
                     или другими частями тела (кроме рук) большее количество раз, чем команда соперника.<br>
                     Есть 17 официальных правил игры, каждое из которых содержит список оговорок и руководящих принципов.
                     Эти правила предназначены для применения на всех уровнях футбола, хотя есть некоторые изменения для
                     таких групп, как юниоры, взрослые, женщины и люди с ограниченными физическими возможностями. Законы
                     очень часто формулировались в общих чертах, которые позволяют упростить их применения в зависимости
                     от характера игры.</p>
-                    <div style="clear: both;"></div>
-                </div>
+                <div style="clear: both;"></div>
             </div>
+        </div>
+        <div style="clear: both;"></div>
     </div>
     <div class="bot">
         <h2 style="color: blue;">ГЛАВНОЕ НЕ ПОБЕДА, А УЧАСТИЕ!</h2>
     </div>
 </body>
+
 </html>

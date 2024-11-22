@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        
+        h1 {
+            text-align: center;
+            margin-top: 50px;
+            margin-bottom: 30px;
+        }
+       
+    </style>
+</head>
+
+<body>
+    <h1>Заполните анкету</h1>
+    <form method="post" action="http://fe.it-academy.by/TestForm.php">
+        <fieldset>
+            <legend>Личные данные</legend>
+            <input type="text" name="fam" value="Фамилия"><br>
+            <input type="text" name="im" value="Имя"><br>
+            <input type="text" name="otch" value="Отчество"><br>
+            <fieldset>
+                <legend>Паспортные данные</legend>
+                <input type="text" name="seria" value="AA" maxlength="2">
+                <input type="text" name="nom" value="1234567" maxlength="7">
+            </fieldset>
+            <fieldset>
+                <legend>Дата рождения</legend>
+                <input type="text" name="year" value="2000" maxlength="4"><br>
+                <select name="mounth">
+                    <option value="1">Январь</option>
+                    <option value="2">февраль</option>
+                    <option value="3">Март</option>
+                    <option value="4">Апрель</option>
+                    <option value="5">Май</option>
+                    <option value="6">Июнь</option>
+                    <option value="7">Июль</option>
+                    <option value="8">Август</option>
+                    <option value="9">Сентябрь</option>
+                    <option value="10">Октябрь</option>
+                    <option value="11">Ноябрь</option>
+                    <option value="12">Декабрь</option>
+                </select><br>
+                <input type="text" name="date">
+            </fieldset>
+            <select name="nation">
+                <option value="1">РБ</option>
+                <option value="2">РФ</option>
+                <option value="3">Польша</option>
+                <option value="4">Литва</option>
+                <option value="5">Латвия</option>
+            </select><br>
+            Адрес:<br>
+            <textarea name="adress"></textarea>
+            <fieldset>
+                <legend>Интересы</legend>
+                <fieldset>
+                    <legend>array: Хобби</legend>
+                    <input type="checkbox" name="hobby" value="yes"> Рыбалка<br>
+                    <input type="checkbox" name="hobby" value="yes"> Астрономия<br>
+                    <input type="checkbox" name="hobby" value="yes"> Дайвинг<br>
+                    <input type="checkbox" name="hobby" value="yes"> Марки<br>
+                </fieldset>
+            </fieldset>
+        </fieldset>
+
+    </form>
+</body>
+
+</html>

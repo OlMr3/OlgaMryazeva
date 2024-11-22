@@ -1,0 +1,14 @@
+@media all and (max-width: 800px) {
+    .menu{width: 50%;}
+    .banner{width: 50%;}
+    .content{margin: 0px 0px;}
+}
+@media all and (max-width: 500px){
+    .menu{width: 100%; 
+    }
+    .banner{width: 100%; 
+   }
+    .content{margin: 0px 0px;}
+}
+    
+    
