@@ -13,15 +13,17 @@
     height: 50px;
     border: solid gray 1px;
   }
-  .CHESS tr:nth-of-type(odd) td:nth-of-type(even){background: black;}
-  .CHESS tr:nth-of-type(even) td:nth-of-type(odd){background: black;}
-  .CHESS tr:first-of-type, tr:last-of-type{background: green;}
-  .CHESS td:first-of-type, td:last-of-type{background: green;}
-  .CHESS tr:first-of-type td:nth-of-type(even){background: green;}
-  .CHESS tr:last-of-type td:nth-of-type(odd){background: green;}
-  .CHESS td:first-of-type, td:last-of-type{background: green;}
-  .CHESS tr:nth-of-type(even) td:first-of-type{background: green;}
-  .CHESS tr:nth-of-type(odd) td:last-of-type{background: green;}
+  table.CHESS tr:nth-of-type(odd) td:nth-of-type(even){background: black;}
+  table.CHESS tr:nth-of-type(even) td:nth-of-type(odd){background: black;}
+  table.CHESS tr:first-of-type td{background: green; height: 20px;}
+  table.CHESS tr:last-of-type td{background: green; height: 20px;}
+  table.CHESS td:first-of-type{background: green; width: 20px;}
+  table.CHESS td:last-of-type{background: green; width: 20px;}
+  table.CHESS tr:first-of-type td:nth-of-type(even){background: green;}
+  table.CHESS tr:last-of-type td:nth-of-type(odd){background: green;}
+  table.CHESS td:first-of-type, td:last-of-type{background: green;}
+  table.CHESS tr:nth-of-type(even) td:first-of-type{background: green;}
+  table.CHESS tr:nth-of-type(odd) td:last-of-type{background: green; width: 20px; height: 20px;}
 </style>
 
 <table class='CHESS'>
