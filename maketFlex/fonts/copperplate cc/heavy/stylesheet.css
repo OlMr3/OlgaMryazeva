@@ -1,0 +1,26 @@
+@font-face {
+    font-family: 'Copperplate CC';
+    src: url('CopperplateCC.eot');
+    src: url('CopperplateCC.eot?#iefix') format('embedded-opentype'),
+        url('CopperplateCC.woff2') format('woff2'),
+        url('CopperplateCC.woff') format('woff'),
+        url('CopperplateCC.ttf') format('truetype'),
+        url('CopperplateCC.svg#CopperplateCC') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Copperplate CC';
+    src: url('CopperplateCC_1.eot');
+    src: url('CopperplateCC_1.eot?#iefix') format('embedded-opentype'),
+        url('CopperplateCC_1.woff2') format('woff2'),
+        url('CopperplateCC_1.woff') format('woff'),
+        url('CopperplateCC_1.ttf') format('truetype'),
+        url('CopperplateCC_1.svg#CopperplateCC') format('svg');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+

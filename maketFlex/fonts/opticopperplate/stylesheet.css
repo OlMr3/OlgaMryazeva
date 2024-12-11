@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'OPTICopperplate';
+    src: url('OPTICopperplate.eot');
+    src: url('OPTICopperplate.eot?#iefix') format('embedded-opentype'),
+        url('OPTICopperplate.woff2') format('woff2'),
+        url('OPTICopperplate.woff') format('woff'),
+        url('OPTICopperplate.ttf') format('truetype'),
+        url('OPTICopperplate.svg#OPTICopperplate') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+

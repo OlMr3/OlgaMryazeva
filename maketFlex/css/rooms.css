@@ -1,0 +1,104 @@
+.history {
+    height: 1120px;
+    background-color: #FFFBEF;
+}
+
+.rooms {
+    background-color: #F0E9D6;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.rooms div {
+    height: 259px;
+    width: 380px;
+    text-align: center;
+    padding-top: 70px;
+}
+
+.rooms p {
+    font: bold 24px Copperplate CC;
+}
+
+.rooms div:first-child {
+    border-right: solid #dfcabe;
+}
+
+.rooms div:nth-child(2) {
+    padding-top: 76px;
+}
+
+.rooms div:nth-child(2) p {
+    margin-top: 10px;
+}
+
+.rooms div:nth-child(3) {
+    background-color: #BA9E76;
+    padding-top: 76px;
+}
+
+.rooms div:nth-child(3) p {
+    margin-top: 5px;
+}
+
+.rooms div:nth-child(4) p {
+    margin-top: 5px;
+}
+
+.history .container {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 197px;
+}
+
+.history .container div:first-child {
+    display: flex;
+    align-items: flex-start;
+
+}
+
+.history .container div:first-child img:last-child {
+    margin: 67px 0px 0px 10px
+}
+
+.history .container div:last-child {
+    padding-top: 40px;
+    position: relative;
+    z-index: 1;
+}
+
+.history .container div:last-child p:first-child {
+    font: bold 20px/28px Poppins;
+    color: #BA9E76;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+
+.history .container div:last-child img {
+    position: absolute;
+    z-index: -1;
+    margin-top: 5px;
+    margin-left: -40px;
+}
+
+.history .container div:last-child p:nth-child(3) {
+    font: bold 40px Copperplate CC;
+    color: #342F2C;
+    margin-top: 10px;
+}
+
+.history .container div:last-child p:nth-child(4) {
+    font: 16px/26px Poppins;
+    color: #675C55;
+    margin-top: 10px;
+}
+
+.history .container div:last-child button {
+    background-color: #342F2C;
+    width: 218px;
+    height: 52px;
+    text-align: center;
+    font: 16px OPTICopperplate;
+    color: #F0E9D6;
+    margin-top: 40px;
+}

@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'Copperplate Cyrillic';
+    src: url('CopperplateCyrillic-Bold.eot');
+    src: url('CopperplateCyrillic-Bold.eot?#iefix') format('embedded-opentype'),
+        url('CopperplateCyrillic-Bold.woff2') format('woff2'),
+        url('CopperplateCyrillic-Bold.woff') format('woff'),
+        url('CopperplateCyrillic-Bold.ttf') format('truetype'),
+        url('CopperplateCyrillic-Bold.svg#CopperplateCyrillic-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+

@@ -1,0 +1,26 @@
+.master {
+    background: url('../image/drill.png') no-repeat center;
+    padding-top: 197px;
+    padding-bottom: 230px;
+}
+
+.master .container div {
+    width: 650px;
+    height: 396px;
+    background: url('../image/Vector5.png') no-repeat;
+    background-color: #342F2C;
+    padding-top: 50px;
+    padding-left: 50px;
+}
+
+.master .container div p {
+    font: bold 40px Copperplate CC;
+    color: #FFFBEF;
+}
+.master .container div button{background-color: #BA9E76;
+    width: 238px;
+    height: 52px;
+    text-align: center;
+    font: 16px OPTICopperplate;
+    color: #F0E9D6;
+    margin-top: 40px;}

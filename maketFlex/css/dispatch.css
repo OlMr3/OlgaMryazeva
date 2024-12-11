@@ -1,0 +1,33 @@
+.dispatch {
+    height: 200px;
+    background: #342F2C;
+    display: flex;
+    justify-content: space-between;
+}
+
+.dispatch .container {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 55px;
+    padding-bottom: 55px;
+}
+
+.dispatch .container>div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.dispatch .container div p:nth-child(2) {
+    font: 600 24px Poppins;
+    color: #FFFBEF;
+    margin-left: 30px;
+}
+
+.dispatch .container div p:nth-child(2) span {
+    font: 16px Poppins;
+    color: #FFFBEF;
+}
+
+.dispatch .container div:nth-child(2) img {
+    margin-top: -10px;
+}

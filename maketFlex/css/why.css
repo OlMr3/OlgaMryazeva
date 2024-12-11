@@ -1,0 +1,107 @@
+.why {
+    height: 1000px;
+    background-color: #FFFBEF;
+    padding-top: 140px;
+}
+
+.why .container>div:first-child {
+    display: flex;
+    justify-content: space-between;
+}
+
+.why .container>div:first-child>div:first-child {
+    width: 5px;
+    height: 192px;
+    background-color: #BA9E76;
+}
+
+.why .container>div:first-child div:nth-child(2) {
+    margin-left: -180px;
+}
+
+.why .container>div:first-child div:nth-child(2) p:first-child {
+    font: bold 20px/28px Poppins;
+    color: #BA9E76;
+    letter-spacing: 5px;
+    ;
+}
+
+.why .container>div:first-child div:nth-child(2) p:last-child {
+    font: bold 40px Copperplate CC;
+    color: #342F2C;
+    margin-top: 10px;
+}
+
+.why .container>div:first-child div:last-child p {
+    font: 16px/26px Poppins;
+    color: #675C55;
+    ;
+}
+
+.why .container>div:last-child {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    z-index: 1;
+    margin-top: 100px;
+}
+
+.order p:first-child {
+    font: bold 100px Copperplate CC;
+    margin-left: 30px;
+}
+
+.order img {
+    position: absolute;
+    z-index: -1;
+    margin-top: -170px;
+}
+
+.order p:nth-child(3) {
+    font: 500 28px Poppins;
+}
+
+.advantages {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-left: 90px;
+}
+
+.advantages>div {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 90px;
+}
+
+.advantages>div div:first-child {
+    position: relative;
+    z-index: 1;
+}
+
+.advantages>div div:first-child img:first-child {
+    position: absolute;
+    z-index: -1;
+    width: 67px;
+    height: 70px;
+}
+
+.advantages>div div:first-child img:last-child {
+    margin-top: 26px;
+    margin-right: 30px;
+    margin-left: -24px;
+    width: 67px;
+    height: 57px;
+}
+
+.advantages>div div:last-child p:first-child {
+    font: 500 20px/36px Poppins;
+    margin-top: -10px;
+    color: #342F2C;
+}
+
+.advantages>div div:last-child p:last-child {
+    font: 16px/26px Poppins;
+    color: #675C55;
+    margin-top: 20px;
+}

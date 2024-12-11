@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'Copperplate CC';
+    src: url('CopperplateCC.eot');
+    src: url('CopperplateCC.eot?#iefix') format('embedded-opentype'),
+        url('CopperplateCC.woff2') format('woff2'),
+        url('CopperplateCC.woff') format('woff'),
+        url('CopperplateCC.ttf') format('truetype'),
+        url('CopperplateCC.svg#CopperplateCC') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+

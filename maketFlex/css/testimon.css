@@ -1,0 +1,90 @@
+.testimon {
+    height: 1220px;
+    background: url('../image/fon.png') no-repeat right top,
+        url('../image/Vector6.png') no-repeat -400px -400px;
+    background-size: 70%;
+    background-color: #F0E9D6;
+    padding-top: 170px;
+}
+
+.testimon .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.testimon .container div:first-child {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.testimon .container div:first-child img:first-child {
+    
+    height: 610px;
+    position: relative;
+}
+
+.testimon .container div:first-child img:last-child {
+    width: 113px;
+    height: 50px;
+    position: absolute;
+    left: 440px;
+    top: 630px;
+}
+
+.testimon .container div:last-child {
+    position: relative;
+    z-index: 1;
+
+}
+
+.testimon .container div:last-child p:first-child {
+    font: bold 20px/28px Poppins;
+    color: #BA9E76;
+    letter-spacing: 5px;
+}
+
+.testimon .container div:last-child p:nth-child(2) {
+    font: bold 35px Copperplate CC;
+    color: #342F2C;
+    margin-top: 10px;
+}
+
+.testimon .container div:last-child div:nth-child(3) {
+    width: 629px;
+    height: 5px;
+    background-color: #BA9E76;
+    margin-top: 10px;
+    margin-left: -235px;
+}
+
+.testimon .container div:last-child img {
+    width: 625px;
+    margin-top: 30px;
+}
+
+.testimon .container div:last-child>div:last-child {
+    width: 514;
+    height: 326px;
+    background: url('../image/Vector7.png');
+    background-color: #342F2C;
+    position: relative;
+    z-index: 1;
+    padding-top: 80px;
+    padding-left: 70px;
+    margin-top: 40px;
+}
+
+.testimon .container div:last-child>div:last-child img {
+    position: absolute;
+    z-index: -1;
+    width: 71.5px;
+    height: 47px;
+    margin-top: -18px;
+    margin-left: -48px;
+}
+
+.testimon .container div:last-child>div:last-child p {
+    font: 16px Poppins;
+    color: white;
+}

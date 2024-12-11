@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .top {
+            margin-top: 50px;
+            margin-left: 20px;
+        }
+
+        form {
+            padding: 20px;
+        }
+
+        p {
+            margin-top: 20px;
+
+            font-size: 20px;
+        }
+
+        .clearfix::after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+
+        .article>p {
+            float: left;
+        }
+
+        .article>input {
+            margin-top: 20px;
+            padding: 2px;
+            width: 80%;
+            float: right;
+        }
+
+        .heading>p {
+            float: left;
+
+        }
+
+        .heading>select {
+            margin-top: 20px;
+            padding: 2px;
+            width: 80%;
+            float: right;
+        }
+
+        .publication>p {
+            float: left;
+        }
+
+        .publication>div {
+            float: right;
+            margin-top: 20px;
+            width: 80%;
+        }
+
+        .publication>div input {
+            float: left;
+            margin-right: 10px;
+            margin-top: 5px;
+        }
+
+        .publication>div span {
+            font-size: 20px;
+            margin-right: 10px;
+
+            float: left;
+        }
+
+        .comment>p {
+            float: left;
+            margin-right: 80px;
+        }
+
+        .comment>input {
+            margin-top: 25px;
+        }
+
+        .text>textarea {
+            width: 100%;
+            height: 50px;
+        }
+
+        .publish {
+            margin-top: 20px;
+
+            font-size: 20px;
+        }
+
+        @media all and (max-width: 930px) {
+            .article>input {
+                float: none;
+                width: 100%;
+            }
+
+            .heading>select {
+                float: none;
+                width: 100%;
+            }
+
+            .publication>p {
+                float: none;
+            }
+
+            .publication>div {
+                float: none;
+            }
+
+            .publication>div span {
+                float: none;
+                display: block;
+                margin-top: 0px;
+            }
+
+            .comment>p {
+                margin-right: 10px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <p class="top">Для публикации вашей статьи заполните, пожалуйста, следующую форму:</p>
+    <form action="http://fe.it-academy.by/TestForm.php" method="get">
+        <label class="article clearfix">
+            <p>Название статьи:</p>
+            <input type="text" name="title">
+        </label>
+        <label class="heading clearfix">
+            <p>Рубрика:</p>
+            <select name="topic">
+                <option value="programming">программирование</option>
+                <option value="technique">компьютерная техника</option>
+                <option value="design">графика и дизайн</option>
+            </select>
+        </label>
+        <label class="publication clearfix">
+            <p>Публикация:</p>
+            <div>
+                <input type="radio" name="where" value="1">
+                <span>на сайте</span>
+                <input type="radio" name="where" value="2">
+                <span>в журнале</span>
+                <input type="radio" name="where" value="3">
+                <span>на сайте и в журнале</span>
+            </div>
+
+        </label>
+        <label class="comment">
+            <p>Разрешить комментарии:</p>
+            <input type="checkbox" name="comment" checked>
+        </label>
+
+        <label class="text">
+            <p>Текст статьи:</p>
+            <textarea name="textofarticle"></textarea>
+        </label>
+        <input class="publish" type="submit" value="Опубликовать">
+    </form>
+</body>
+
+</html>

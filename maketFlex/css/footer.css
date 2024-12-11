@@ -1,0 +1,89 @@
+.footer {
+    height: 632px;
+    background: url('../image/Vector9.png') no-repeat -150px;
+    background-color: #342F2C;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer div:first-child {
+    width: 499px;
+    background: url('../image/Vector.png') no-repeat 50% 0%;
+}
+
+.footer div:first-child img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+}
+
+.footer div:first-child p {
+    font: 16px Poppins;
+    color: white;
+    margin-left: 82px;
+    margin-top: 200px;
+}
+
+.footer div:first-child div {
+    width: 468px;
+    height: 1px;
+    background-color: #FFFBEF;
+    margin-top: 75px;
+    margin-left: 82px;
+}
+
+.footer div:first-child p:last-child {
+    font-size: 15px;
+    color: #938C89;
+    margin-top: 30px;
+    margin-left: 82px;
+}
+
+.footer div:nth-child(2) {
+    width: 1px;
+    height: 632px;
+    background-color: #FFFBEF
+}
+
+.footer div:nth-child(3) {
+    width: 600px;
+}
+
+.footer div:nth-child(3) p:first-child {
+    font: bold 20px Poppins;
+    color: white;
+    margin-top: 100px;
+}
+
+.footer div:nth-child(3) p:nth-child(2) {
+    font: 16px Poppins;
+    color: white;
+    margin-top: 30px;
+}
+
+form {
+    display: inline;
+}
+
+form input {
+    width: 400px;
+    background-color: #342F2C;
+    border-bottom: 2px solid #938C89;
+    margin-top: 30px;
+}
+
+[value*="mail"] {
+    font: italic 20px/70px Poppins;
+    color: #BA9E76;
+    padding-left: 20px;
+}
+
+.footer div:nth-child(3) button {
+    background-color: #BA9E76;
+    width: 215px;
+    height: 52px;
+    text-align: center;
+    font: 16px OPTICopperplate;
+    color: #F0E9D6;
+}

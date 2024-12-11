@@ -1,0 +1,74 @@
+.custom {
+    height: 800px;
+    background-color: #FFFBEF;
+}
+
+.custom .container {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.custom .container div:first-child {
+    position: relative;
+    z-index: 1;
+    margin-top: 150px;
+}
+
+.custom .container div:first-child p:first-child {
+    font: bold 20px/28px Poppins;
+    color: #BA9E76;
+    letter-spacing: 5px;
+}
+
+.custom .container div:first-child img {
+    position: absolute;
+    z-index: -1;
+    margin-top: 5px;
+    margin-left: -40px;
+}
+
+.custom .container div:first-child p:nth-child(3) {
+    font: bold 30px Copperplate CC;
+    color: #342F2C;
+    margin-top: 10px;
+}
+
+.custom .container div:first-child div {
+    width: 97px;
+    height: 5px;
+    background-color: #BA9E76;
+    margin-top: 30px;
+}
+
+.custom .container div:first-child p:nth-child(5) {
+    font: 16px/26px Poppins;
+    color: #675C55;
+    margin-top: 20px;
+}
+
+.custom .container div:first-child button {
+    background-color: #342F2C;
+    width: 260px;
+    height: 52px;
+    text-align: center;
+    font: 16px OPTICopperplate;
+    color: #F0E9D6;
+    margin-top: 60px;
+}
+
+.custom .container div:last-child {
+    margin-top: 120px;
+    display: flex;
+    flex-direction: column;
+}
+
+.custom .container div:last-child img {
+    width: 519px;
+    height: 236px;
+}
+
+.custom .container div:last-child img:last-child {
+    margin-top: 20px;
+    margin-left: -80px;
+}

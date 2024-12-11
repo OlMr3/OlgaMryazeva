@@ -1,0 +1,93 @@
+.news {
+    height: 1256px;
+    background: url('../image/Vector8.png') no-repeat -190px;
+    background-color: #FFFBEF;
+    padding-top: 150px;
+}
+
+.news .container>div:first-child {
+    text-align: center;
+
+}
+
+.news .container>div:first-child p:first-child {
+    font: bold 20px/28px Poppins;
+    color: #BA9E76;
+    letter-spacing: 5px;
+}
+
+.news .container>div:first-child p:nth-child(2) {
+    font: bold 40px Copperplate CC;
+    color: #342F2C;
+    margin-top: 10px;
+}
+
+.news .container>div:first-child div {
+    width: 220px;
+    height: 5px;
+    background-color: #BA9E76;
+    margin-top: 30px;
+    margin-left: 485px;
+}
+
+.blog {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 150px;
+}
+
+.blog>div:first-child {
+    width: 641px;
+    height: 620px;
+    background-color: #342F2C;
+}
+
+.blog>div:first-child img {
+    width: 641px;
+}
+
+.blog>div:first-child p:nth-child(2) {
+    font: 16px Poppins;
+    letter-spacing: 2px;
+    color: white;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+.blog>div:first-child div {
+    width: 54px;
+    height: 5px;
+    background-color: #BA9E76;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.blog>div:first-child p:nth-child(4) {
+    font: 500 20px/31px Poppins;
+    color: white;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.blog>div:last-child p {
+    font: 500 16px Poppins;
+    color: #342F2C;
+}
+
+.blog>div:last-child p span {
+    font: 16px Poppins;
+    color: #342F2C;
+}
+
+.blog>div:last-child p:nth-child(3n+2) {
+    font: 700 26px/41px Poppins;
+    color: #342F2C;
+}
+
+.blog>div:last-child div {
+    width: 497px;
+    height: 3px;
+    background-color: #BA9E76;
+    margin-top: 33px;
+    margin-bottom: 33px;
+}
