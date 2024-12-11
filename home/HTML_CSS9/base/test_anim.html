@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{margin-left: 50px;}
+        .img {
+            width: 127px;
+            height: 149px;
+            animation: img 1s steps(7) infinite;
+        }
+
+        @keyframes img {
+            from {
+                background: url('../base/sprite2.png') 0 0
+            }
+
+
+            to {
+                background: url('../base/sprite2.png') -890px 0
+            }
+        }
+
+        .img2 {
+            width: 127px;
+            height: 149px;
+            margin-top: 20px;
+            animation: img2 1s steps(7) infinite;
+        }
+
+        @keyframes img2 {
+            from {
+                background: url('../base/sprite2.png') 0 -147px
+            }
+
+
+            to {
+                background: url('../base/sprite2.png') -890px -147px
+            }
+        }
+
+        .img3 {
+            width: 127px;
+            height: 149px;
+            margin-top: 20px;
+            animation: img3 1s steps(7) infinite;
+        }
+
+        @keyframes img3 {
+            from {
+                background: url('../base/sprite2.png') 0 -294px
+            }
+
+            to {
+                background: url('../base/sprite2.png') -890px -294px
+            }
+        }
+        .img4{width: 127px;
+            height: 149px;
+            margin-top: 20px;
+            animation: img4 1s steps(6) infinite;}
+        
+            @keyframes img4 {
+            from {
+                background: url('../base/sprite2.png') 0 -441px
+            }
+
+            to {
+                background: url('../base/sprite2.png') -763px -441px
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="img"></div>
+    <div class="img2"></div>
+    <div class="img3"></div>
+    <div class="img4"></div>
+</body>
+
+</html>
