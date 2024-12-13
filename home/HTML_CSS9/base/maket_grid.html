@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: 200px 1fr; grid-template-rows: 60px 100px;
+        }
+
+        .head {
+            grid-column: 1/4;
+            grid-row: 1;
+            text-align: center;
+            padding: 20px;
+            background-color: lightblue;
+        }
+        .menu{grid-column: 1; grid-row: 2/5; background: #F0E68C;}
+        .menu h3{text-align: center; margin-top: 20px; margin-bottom: 20px;}
+        .menu ul{margin-left: 20px; margin-bottom: 20px; margin-right: 20px; font-size: 20px;}
+        
+        .content{grid-column: 2/5; grid-row: 2/5;}
+        .content1{display: grid}
+        .content1 h3{ margin-top: 20px; margin-bottom: 20px; margin-left: 400px; grid-column: 3 / span 2}
+        .content1 img{margin-left: 20px; margin-right: 20px; grid-column: 1 / span 2; grid-row: 2}
+        .content1 p{grid-column: 3 / span 2; grid-row: 2 / span 3}
+        
+        .bot{grid-column: 1/4;grid-row: 5; text-align: center;
+            padding: 20px;
+            background-color: lightblue;}
+    </style>
+</head>
+
+<body>
+    <div class="grid">
+        <div class="head">
+            <h2 style="color: blue;">ПРИВЕТ УЧАСТНИКАМ СОРЕВНОВАНИЙ!</h2>
+        </div>
+
+        <div class="menu">
+            <h3>ВИДЫ СПОРТА:</h3>
+            <ul>
+                <li> <a href="https://olympteka.ru/sport/speed_skating.html" target="_blank">конькобежный спорт </a>
+                </li>
+                <li><a href="https://www.championat.com/biathlon/" target="_blank">биатлон</a></li>
+                <li><a href="https://www.championat.com/stat/football/#2024-10-27" target="_blank">футбол</a></li>
+                <li><a href="https://archeryclub.by/" target="_blank">стрельба из лука</a></li>
+                <li><a href="https://rsport.ria.ru/20230124/pryzhki-1846823304.html" target="_blank">прыжки в
+                        длину</a></li>
+                <li><a href="https://world-sport.org/acyclic/jump_high/technology/" target="_blank">прыжки в
+                        высоту</a></li>
+                <li><a href="https://www.championat.com/figureskating/" target="_blank">фигурное катание</a></li>
+                <li><a href="https://www.championat.com/olympic/_synchroog.html" target="_blank">синхронное
+                        плавание</a></li>
+                <li><a href="https://ozon.by/category/shahmaty-13509/" target="_blank">шахматы</a></li>
+                <li><a href="https://www.funtastik.by/igrushki/hyq/nastolnaya-igra-shashki/" target="_blank">шашки</a>
+                </li>
+            </ul>
+        </div>
+        <div class="content">
+            <div class="content1">
+                <h3>ФУТБОЛ</h3>
+                <img src="../../HTML_CSS7/base/football.jpg" alt="футбол">
+                <p>Футбол &mdash; командный вид спорта, в котором целью является
+                    забить мяч в ворота соперника ногами
+                    или другими частями тела (кроме рук) большее количество раз, чем команда соперника.<br>
+                    Есть 17 официальных правил игры, каждое из которых содержит список оговорок и руководящих принципов.
+                    Эти правила предназначены для применения на всех уровнях футбола, хотя есть некоторые изменения для
+                    таких групп, как юниоры, взрослые, женщины и люди с ограниченными физическими возможностями. Законы
+                    очень часто формулировались в общих чертах, которые позволяют упростить их применения в зависимости
+                    от характера игры.</p>
+
+            </div>
+        </div>
+
+
+        <div class="bot">
+            <h2 style="color: blue;">ГЛАВНОЕ НЕ ПОБЕДА, А УЧАСТИЕ!</h2>
+        </div>
+    </div>
+
+</body>
+
+</html>

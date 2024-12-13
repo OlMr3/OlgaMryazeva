@@ -6,12 +6,12 @@
 .rooms {
     background-color: #F0E9D6;
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-between;
 }
 
 .rooms div {
     height: 259px;
-    width: 380px;
+    width: 480px;
     text-align: center;
     padding-top: 70px;
 }
@@ -56,8 +56,10 @@
     align-items: flex-start;
 
 }
+.history .container div:first-child img:first-child{width: 309px;}
 
 .history .container div:first-child img:last-child {
+    width: 309px;
     margin: 67px 0px 0px 10px
 }
 

@@ -27,7 +27,8 @@
 
 .header .container div:nth-child(2) {
     background: url('../image/Vector.png') no-repeat;
-    padding: 45px 20px 75px 20px;
+    background-size: 100% 100%;
+    padding: 45px 10px 53px 10px;;
 }
 
 .header .container div:last-child {
