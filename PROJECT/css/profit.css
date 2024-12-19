@@ -1,0 +1,30 @@
+.profit {
+    background: url('../images/profit/44.png') no-repeat 47% 19%,
+        url('../images/profit/1.png') no-repeat 45% bottom,
+        url('../images/profit/2.png') no-repeat right,
+        radial-gradient(ellipse farthest-corner at 90% 90%, #0b3f3700, #0B3F37, #cb8e62);
+    height: 483px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.profit .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.profit .container p:nth-child(1) {
+    font-size: 140px;
+    color: white;
+}
+
+.profit .container p:nth-child(2) {
+    font-size: 35px;
+    color: white;
+    margin-top: 50px;
+}
+
+.profit .container button {
+    margin-top: 50px;
+}

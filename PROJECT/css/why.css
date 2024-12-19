@@ -1,0 +1,38 @@
+.why .container div {
+    width: calc(25% - 36.7px);
+    margin-bottom: 34px;
+}
+
+.why .container div p:nth-child(2) {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+div.why div.container div p:nth-child(3) {
+    font-size: 14px;
+    line-height: 134.4%;
+    margin-bottom: 20px;
+    color: #031412;
+}
+
+
+.why .container div summary {
+    display: inline-block;
+    background: url('../images/why/down.png') no-repeat right,
+    linear-gradient(90deg, #A16D4B, #E4A16F 91%);
+    background-clip: text;
+    color: transparent;
+    font: 14px 'Mont';
+    line-height: 134.4%;
+    cursor: pointer;
+}
+.why .container div summary span{background: 
+    linear-gradient(90deg, #A16D4B, #E4A16F 91%);
+    
+    
+    background-clip: text;
+    color: transparent;
+    font: 10px 'Mont';
+margin-left: 3px;}

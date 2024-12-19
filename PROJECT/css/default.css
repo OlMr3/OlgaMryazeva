@@ -1,0 +1,36 @@
+* {
+    box-sizing: border-box;
+}
+
+
+.container {
+    width: 1400px;
+    margin: 0 auto;
+}
+
+p,
+a,
+span {
+    font-family: 'Mont';
+    text-decoration: none;
+    line-height: 96.4%;
+    color: #031412;
+}
+
+p#Lighthaus {
+    font-family: 'Lighthaus';
+}
+
+button {
+    width: 327px;
+    height: 50px;
+    background: linear-gradient(69deg, #5E3928, #E4A16F 85%);
+    border: none;
+    text-align: center;
+    color: white;
+    font: bold 18px 'Mont';
+}
+
+button:hover {
+    background: linear-gradient(69deg, #5e392891 0%, #e4a26f 100%);
+}

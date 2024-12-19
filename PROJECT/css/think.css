@@ -1,0 +1,11 @@
+.think{display: block;}
+.think .container{display: flex; flex-direction: row; justify-content: space-between;}
+.think .container div{ position: relative;
+    width: calc(33.333% - 20px);
+    height: auto;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.1);
+    padding: 30px;}
+    .think .container div figcaption{font-size: 25px; margin-top: 20px;}
+    .think .container div p{font-size: 14px; font-style: italic; line-height: 134.4%; margin-top: 25px; margin-bottom: 25px;}
+    .think .container div span{font-size: 14px; font-weight: bold;}
+    .think .container div>img{position: absolute; top: 0; right: 0; z-index: 1;}

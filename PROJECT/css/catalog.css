@@ -1,0 +1,45 @@
+.catalog {
+    padding-top: 25px;
+}
+
+.catalog .container p {
+    font-size: 50px;
+    line-height: 105.9%;
+    margin-bottom: 40px;
+}
+
+.catalog .container div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.catalog .container div a {
+    display: flex;
+    align-items: end;
+    width: calc(25% - 20px);
+    height: 146px;
+    margin-bottom: 30px;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.catalog .container div a img {
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+div.catalog div.container div>a>span {
+    width: 100%;
+    padding: 70px 40px 27px 40px;
+    font-size: 20px;
+    text-align: center;
+    background-image: linear-gradient(180deg, #072c2600 0%, #072c269b 100%);
+    color: white;
+}
+hr{color: #EBEBEB;}

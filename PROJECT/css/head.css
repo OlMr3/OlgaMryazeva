@@ -1,0 +1,103 @@
+
+header {
+ /* position: fixed;
+    left: 0;
+  width: 100%;*/
+  
+    background: url('../images/footer_bg.jpg') no-repeat;
+}
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.menu nav {
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu>nav>a {
+    color: white;
+    font-size: 16px;
+    transition-duration: 1s;
+    margin-left: 50px;
+}
+.menu>nav>a:nth-child(1) {
+    margin-right: 60px;
+    margin-left: 0px;
+}
+
+.menu>nav>a:hover {
+    text-decoration: underline;
+    background: linear-gradient(90deg, #A16D4B, #E4A16F 91%);
+    background-clip: text;
+    color: transparent;
+}
+
+.menu>div:last-child>a {
+    margin-left: 18px;
+}
+
+.menu>div:last-child>a>img {
+    transition: transform 0.5s
+}
+
+.menu>div:last-child>a>img:hover {
+    transform: scale(1.2);
+}
+.head {
+    background: url('../images/BG.png') no-repeat;
+    background-size: 100% 100%;
+    padding-bottom: 20px;
+}
+
+
+.hit {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 700px;
+}
+
+.hit>p#Lighthaus {
+    font-size: 100px;
+    color: white;
+    margin-bottom: 40px;
+    margin-top: 40px;
+}
+
+.hit>p:nth-child(3) {
+    font-size: 50px;
+    margin-top: 47px;
+    color: white;
+}
+
+.hit>div {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    width: 326px;
+}
+
+.hit>div>p {
+    font-size: 30px;
+    color: white;
+    font-weight: 10;
+}
+
+.hit>div>p:last-child {
+    font-weight: bold;
+}
+
+.hit>form {
+    margin-top: 35px;
+}
+
+.head>div:last-child>img {
+    margin-top: 45px;
+}

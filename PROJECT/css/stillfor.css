@@ -1,0 +1,4 @@
+.page{padding-top: 30px;}
+.page .container a{font-size: 18px; transition-duration: 2s;}
+.page .container a:hover{text-decoration: underline;}
+.page .container span{font-size: 18px; font-weight: bold;} 
