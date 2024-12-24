@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../PROJECT/fonts/Lighthaus/stylesheet.css">
+    <link rel="stylesheet" href="../PROJECT/fonts/Mont/stylesheet.css">
+    <link rel="stylesheet" href="../PROJECT/css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="content"></div>
+<script>
+fetch('HEADER.html')
+.then(response => response.text())
+.then(html => document.getElementById('content').innerHTML = html);
+</script>
+<div class="thank">
+    <picture>
+        <source media="(max-width: 500px)" srcset="../PROJECT/images/thank/889.png">
+        <img src="../PROJECT/images/thank/88.png" alt="Картинка" title="Фото">
+    </picture>
+    <p id="Lighthaus">Спасибо за заказ</p>
+    <p>Мы свяжемся с вами<br> 
+        в ближайшее время</p>
+    <form action="../PROJECT/project.html">
+        <button id="base">Главная</button>
+    </form>
+</div>
+<div id="content1"></div>
+<script>
+    fetch('FOOTER.html')
+    .then(response => response.text())
+    .then(html => document.getElementById('content1').innerHTML = html);
+    </script>
+   
+</body>
+</html>

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../PROJECT/fonts/Lighthaus/stylesheet.css">
+    <link rel="stylesheet" href="../PROJECT/fonts/Mont/stylesheet.css">
+    <link rel="stylesheet" href="../PROJECT/css/style.css">
+    
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="about"></div>
+    <script>
+        fetch('HEADER.html')
+            .then(response => response.text())
+            .then(html => document.getElementById('about').innerHTML = html);
+    </script>
+    <div class="page">
+        <div class="container">
+            <a href="../PROJECT/project.html">Главная</a>
+            <span>&sol;</span>
+            <a href="../PROJECT/katalog.html">Каталог</a>
+            <span>&sol;</span>
+            <span>Дистиллятор для получения гидролата 8л</span>
+        </div>
+    </div>
+    <div class="card">
+        <div class="container">
+            <div>
+                <button></button>
+                <img src="../PROJECT/images/catalog/small.jpg" alt="Фото" title="Фото">
+                <img src="../PROJECT/images/catalog/small.jpg" alt="Фото" title="Фото">
+                <img src="../PROJECT/images/catalog/small.jpg" alt="Фото" title="Фото">
+                <img src="../PROJECT/images/catalog/small.jpg" alt="Фото" title="Фото">
+                <img src="../PROJECT/images/catalog/small.jpg" alt="Фото" title="Фото">
+                <button></button>
+            </div>
+            <div>
+                <img id="ph1" src="../PROJECT/images/ourProducts/image 9.jpg" alt="Фото" title="Фото">
+                <img id="ph2" src="../PROJECT/images/ourProducts/heart.svg" alt="Избранное" title="Фото">
+                <img id="ph3" src="../PROJECT/images/ourProducts/sale.jpg" alt="Скидка" title="Фото">
+            </div>
+            <div>
+                <p id="Lighthaus">Дистиллятор для<br> получения гидролата 8л</p>
+                <div>
+                    <p>В наличии</p>
+                    <p>Артикул: <span>CP-0803</span></p>
+                </div>
+                <hr>
+                <div>
+                    <p>Описание</p>
+                    <p>Медный дистиллятор &laquo;Феникс&raquo; станет Вашим надёжным<br> помощником и проводником в мир дистилляции
+                        и
+                        красоты, с<br> которым Вы легко сможете получать свои любимые гидролаты<br> или алкогольные
+                        напитки.</p>
+                </div>
+                <hr>
+                <div>
+                    <span>Цена</span>
+                    <span>
+                        <span>10 953 грн</span>
+                        <span>1 953 грн</span>
+                    </span>
+                </div>
+                <div>
+                    <div class="quantity">
+                        <input type="button" value="-" id="button_minus">
+                        <input type="text" step="1" min="1" max="10" id="num_count" name="quantity" value="1"
+                            title="Qty">
+                        <input type="button" value="+" id="button_plus">
+                        <script src="../PROJECT/js/count.js"></script>
+                    </div>
+                    <form action="../PROJECT/basket.html">
+                        <button id="base">Купить</button>
+                    </form>
+                </div>
+                <hr>
+                <div>
+                    <p>Поделиться</p>
+                    <img src="../PROJECT/images/catalog/soc.png" alt="Соц сети" title="Соц сети">
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="description">
+        <div class="container">
+            <hr>
+            <p id="Lighthaus">Описание</p>
+            <p>Для всех, кто хочет самостоятельно получать гидролат или дистиллят, и быть уверенным в его качестве &mdash; у нас есть готовое
+                и удобное решение. Современный дистиллятор &laquo;Феникс&raquo; станет для Вас отличным помощником. Полностью медный аппарат
+                изготовлен на собственном производстве, на основании многолетнего опыта работы с медными дистилляторами.</p>
+            <p>
+                Гораздо практичней, чем алькитара, и ни в чём ей не уступающий. Даже наоборот, имеет ряд преимуществ, таких как толщина
+                металла, надёжные, сварные швы, и деревянные ручки, которые не так нагреваются, как латунные. Соединение
+                ароматизационной колонны с емкостью герметично и долговечно. Радиатор данного аппарата расходует в 3 раза меньше воды
+                для охлаждения, в сравнении с алькитарой такого же объёма.</p>
+            <p>Замечательный аппарат прослужит для Вас долгие годы и будет радовать своего владельца гидролатом высокого качества.
+                Оцените все преимущества паровой дистилляции и получайте гидролаты, в натуральности которых Вы можете быть уверенны.
+                Аппарат полностью укомплектован и готов к работе. Объём перегонного куба &mdash; 8 литров. Объём колонны &mdash; 0,8 литра. Аппарат
+                полностью укомплектован и готов к эксплуатации.</p>
+            <hr>
+        </div>
+    </div>
+    <div class="reviews">
+        <div class="container">
+            <p id="Lighthaus">Отзывы</p>
+            <button id="base">Оставить отзыв</button>
+        </div>
+    </div>
+    <div id="newreviews"></div>
+    <script>
+        fetch('reviews.html')
+            .then(response => response.text())
+            .then(html => document.getElementById('newreviews').innerHTML = html);
+    </script>
+    <div class="fon still">
+        <p id="Lighthaus">Вам также будет интересно...</p>
+        <div id="interesting"></div>
+        <script>
+            fetch('goods.html')
+                .then(response => response.text())
+                .then(html => document.getElementById('interesting').innerHTML = html);
+        </script>
+    </div>
+    <div id="choice"></div>
+    <script>
+        fetch('FOOTER.html')
+            .then(response => response.text())
+            .then(html => document.getElementById('choice').innerHTML = html);
+    </script>
+
+</body>
+
+</html>
+
+
+

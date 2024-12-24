@@ -14,7 +14,7 @@
     justify-content: space-between;
 }
 
-.profit .container p:nth-child(1) {
+.profit .container p#Lighthaus {
     font-size: 140px;
     color: white;
 }

@@ -7,10 +7,30 @@
     width: 1400px;
     margin: 0 auto;
 }
+@media all and (max-width: 1420px) {
+    .container{
+        width: 900px;
+    }
+    
+}
+@media all and (max-width: 920px) {
+    .container{
+        width: 500px;
+    }
+    
+}
+@media all and (max-width: 565px) {
+    .container{
+        width: 285px;
+    }
+    
+}
+
 
 p,
 a,
-span {
+span,
+li {
     font-family: 'Mont';
     text-decoration: none;
     line-height: 96.4%;
@@ -19,9 +39,10 @@ span {
 
 p#Lighthaus {
     font-family: 'Lighthaus';
+    color: #031412;
 }
 
-button {
+button#base {
     width: 327px;
     height: 50px;
     background: linear-gradient(69deg, #5E3928, #E4A16F 85%);
@@ -31,6 +52,6 @@ button {
     font: bold 18px 'Mont';
 }
 
-button:hover {
+button#base:hover {
     background: linear-gradient(69deg, #5e392891 0%, #e4a26f 100%);
 }

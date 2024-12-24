@@ -1,0 +1,53 @@
+.thank {
+    padding-top: 105px;
+    padding-bottom: 200px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    margin-top: 85px;
+}
+
+.thank picture {
+    margin-left: 70px;
+}
+
+.thank>p#Lighthaus {
+    font-size: 50px;
+    line-height: 105.9%;
+    margin-top: 45px;
+}
+
+.thank>p:nth-child(3) {
+    font-size: 27px;
+    margin-top: 45px;
+    margin-bottom: 45px;
+    text-align: center;
+}
+
+.thank form {
+    margin: 0 auto;
+}
+
+@media all and (max-width: 920px) {
+    .thank {
+        padding-bottom: 50px;
+        padding-top: 50px;
+    }
+}
+
+@media all and (max-width: 565px) {
+    .thank>p#Lighthaus {
+        font-size: 30px;
+    }
+
+    .thank>p:nth-child(3) {
+        font-size: 20px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+    .thank form>button#base {
+        width: 290px;
+    }
+}

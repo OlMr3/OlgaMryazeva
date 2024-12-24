@@ -1,3 +1,4 @@
+@import url('../css/header.css');
 @import url('../css/reset.css');
 @import url('../css/default.css');
 @import url('../css/head.css');
@@ -11,3 +12,8 @@
 @import url('../css/footer.css');
 @import url('../css/stillfor.css');
 @import url('../css/catalog.css');
+@import url('../css/thank.css');
+@import url('../css/about.css');
+@import url('../css/card.css');
+@import url('../css/basket.css');
+@import url('../css/order.css');

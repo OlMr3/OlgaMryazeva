@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../PROJECT/fonts/Lighthaus/stylesheet.css">
+    <link rel="stylesheet" href="../PROJECT/fonts/Mont/stylesheet.css">
+    <link rel="stylesheet" href="../PROJECT/css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="about"></div>
+    <script>
+        fetch('HEADER.html')
+            .then(response => response.text())
+            .then(html => document.getElementById('about').innerHTML = html);
+    </script>
+    <div class="page">
+        <div class="container">
+            <a href="../PROJECT/project.html">Главная</a>
+            <span>&sol;</span>
+            <span>Корзина</span>
+        </div>
+    </div>
+    <div class="basket">
+        <div class="container">
+            <p id="Lighthaus">Корзина</p>
+            <div class="list">
+                <div>
+                    <div>
+                        <p>Товар</p>
+                            <p>Количество</p>
+                            <p>Цена</p>
+                    </div>
+                    <hr>
+                    <div>
+                        <div>
+                            <img src="../PROJECT/images/catalog/small.jpg" alt="Картинка" title="Дистиллятор">
+                            <p>Дистиллятор для<br> получения гидролата 8л</p>
+                        </div>
+                            <p>2шт</p>
+                            <p>10 000 грн</p>
+                            <button></button>
+                    </div>
+                    <hr>
+                    <div>
+                        <div>
+                            <img src="../PROJECT/images/catalog/small.jpg" alt="Картинка" title="Дистиллятор">
+                            <p>Дистиллятор для<br> получения гидролата 8л</p>
+                        </div>
+                            <p>2шт</p>
+                            <p>10 000 грн</p>
+                            <button></button>
+                    </div>
+                    <form action="../PROJECT/katalog.html">
+                        <button id="base">Назад к покупкам</button>
+                    </form>
+                </div>
+                <div class="delivery">
+                    <p>Итого</p>
+                    <p>10 000 грн</p>
+                    <hr>
+                    <p>У вас бесплатная доставка!</p>
+                    <form action="../PROJECT/thank.html">
+                        <button id="base">Оформить заказ</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="choice"></div>
+    <script>
+        fetch('FOOTER.html')
+            .then(response => response.text())
+            .then(html => document.getElementById('choice').innerHTML = html);
+    </script>
+</body>
+</html>

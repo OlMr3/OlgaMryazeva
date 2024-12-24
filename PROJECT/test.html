@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Выезжающее меню</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
+}
+
+.hamburger {
+    position: fixed;
+    top: 20px;
+    right: 30px;
+    cursor: pointer;
+    z-index: 12; /* Увеличиваем z-index, чтобы гамбургер всегда был сверху */
+}
+
+.line {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: black;
+    margin-bottom: 4px;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Стилизация крестика */
+.cross .line:nth-child(1) {
+    transform: rotate(45deg) translate(6px, 7px);
+}
+
+.cross .line:nth-child(2) {
+    opacity: 0;
+}
+
+.cross .line:nth-child(3) {
+    transform: rotate(-45deg) translate(6px, -7px);
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: -100vw; /* Скрываем меню за правым краем экрана */
+    width: 100vw; /* Ширина меню - вся ширина экрана */
+    height: 100vh; /* Высота меню - вся высота экрана */
+    background-color: #333;
+    color: white;
+    transition: all 0.3s ease-in-out;
+    z-index: 11;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 50px 0;
+}
+
+.sidebar li a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 15px;
+}
+
+.sidebar li a:hover {
+    background-color: #555;
+}
+
+.open {
+    transform: translateX(-100vw); /* Открытие меню на весь экран */
+}
+
+/* Затемнённый фон при открытом меню */
+.bg-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease-in-out;
+    z-index: 10;
+}
+
+.open ~ .bg-overlay {
+    opacity: 1;
+    visibility: visible;
+}
+</style>
+<body>
+    <!-- Гамбургер -->
+    <div class="hamburger" id="hamburger">
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+    </div>
+    
+    <!-- Меню -->
+    <nav class="sidebar" id="sidebar">
+        <ul>
+            <li><a href="#">Главная</a></li>
+            <li><a href="#">О нас</a></li>
+            <li><a href="#">Услуги</a></li>
+            <li><a href="#">Контакты</a></li>
+        </ul>
+    </nav>
+
+    <script>const hamburger = document.getElementById('hamburger');
+        const sidebar = document.getElementById('sidebar');
+        const overlay = document.querySelector('.bg-overlay'); // Добавление фона
+        
+        // Обработчик клика на гамбургер
+        hamburger.addEventListener('click', () => {
+            // Переключаем классы open и cross
+            sidebar.classList.toggle('open');
+            hamburger.classList.toggle('cross');
+            overlay.classList.toggle('open'); // Управление фоном
+        });</script>
+</body>
+</html>

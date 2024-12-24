@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../PROJECT/fonts/Lighthaus/stylesheet.css">
+    <link rel="stylesheet" href="../PROJECT/fonts/Mont/stylesheet.css">
+    <link rel="stylesheet" href="../PROJECT/css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="content"></div>
+    <script>
+        fetch('HEADER.html')
+            .then(response => response.text())
+            .then(html => document.getElementById('content').innerHTML = html);
+    </script>
+    <div class="order">
+        <div class="container">
+            <div class="data">
+                <div>
+                    <form action="../PROJECT/katalog.html">
+                        <button id="base">Назад к покупкам</button>
+                    </form>
+                    <p id="Lighthaus">Оформить заказ</p>
+                </div>
+                <div>
+                    <div>
+                        <p>Уже есть аккаунт или<br>
+                            хотите зарегистрироваться ?</p>
+                        <p>Войдите в кабинет и получите скидку </p>
+                    </div>
+                    <form action="../PROJECT/order.html">
+                        <button id="base">Войти</button>
+                    </form>
+                </div>
+                <div>
+                    <div>
+                        <p>Личные данные</p>
+                        <form action="http://fe.it-academy.by/TestForm.php" method="get">
+                            <input type="text" name="firstName" value="Имя">
+                            <input type="text" name="surName" value="Фамилия">
+                            <input type="text" name="phone" value="Телефон">
+                            <input type="text" name="email" value="E-mail">
+                            <input type="text" name="country" value="Страна">
+                            <input type="text" name="city" value="Город">
+                        </form>
+                    </div>
+                    <hr>
+                    <div>
+                        <p>Доставка</p>
+                        <form action="http://fe.it-academy.by/TestForm.php" method="get">
+                            <label><input type="radio" name="answer" value="pickup"> Самовывоз</label>
+                            <p>Вы можете забрать из нашего официального<br> магазина по адресу Бажана 8-Б, Киев, 02132
+                                Украина</p><br>
+                            <label><input type="radio" name="answer" value="newPost"> Новая почта</label>
+                            <p>Вы можете забрать из нашего официального<br> магазина по адресу Бажана 8-Б, Киев, 02132
+                                Украина</p><br>
+                            <label><input type="radio" name="answer" value="courier_newPost"> Курьер &ldquo;Новая
+                                почта&rdquo;</label>
+                            <p>Вы можете забрать из нашего официального<br> магазина по адресу Бажана 8-Б, Киев, 02132
+                                Украина</p>
+                        </form>
+                    </div>
+                    <hr>
+                    <div>
+                        <p>Оплата</p>
+                        <form action="http://fe.it-academy.by/TestForm.php" method="get">
+                            <label><input type="radio" name="answer" value="pickup"> При получении</label><br><br>
+                            <label><input type="radio" name="answer" value="pickup"> Онлайн-оплата картой</label>
+                        </form>
+                    </div>
+                    <form action="../PROJECT/order.html">
+                        <button id="base">Регистрация</button>
+                    </form>
+                </div>
+            </div>
+            <div class="promotion">
+                <div>
+                    <div><img src="../PROJECT/images/catalog/small.jpg" alt="Картинка" title="Дистиллятор">
+                        <div>
+                            <p>Дистиллятор для<br> получения гидролата 8л</p>
+                            <span> <span>2шт</span>
+                                <span>10 000 грн</span></span>
+                        </div>
+                    </div>
+                    <hr>
+                    <div><img src="../PROJECT/images/catalog/small.jpg" alt="Картинка" title="Дистиллятор">
+                        <div>
+                            <p>Дистиллятор для<br> получения гидролата 8л</p>
+                            <span> <span>2шт</span>
+                                <span>10 000 грн</span></span>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="delivery">
+                        <p>Итого</p>
+                        <p>20 000 грн</p>
+                        <hr>
+                        <p>У вас бесплатная доставка!</p>
+                        <form action="../PROJECT/thank.html">
+                            <button id="base">Оформить заказ</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="content1"></div>
+<script>
+    fetch('FOOTER.html')
+    .then(response => response.text())
+    .then(html => document.getElementById('content1').innerHTML = html);
+    </script>
+
+</body>
+
+</html>

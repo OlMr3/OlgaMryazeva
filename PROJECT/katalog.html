@@ -11,29 +11,12 @@
 </head>
 
 <body>
-    <header>
-        <div class="container menu">
-            <nav>
-                <a href="главная"><img src="../PROJECT/images/logo.png" alt="Логотип" title="Copper pro"></a>
-                <a href="">Каталог</a>
-                <a href="">Новости</a>
-                <a href="">Доставка</a>
-                <a href="">О нас</a>
-                <a href="">Контакты</a>
-            </nav>
-            <div>
-                <a href="">
-                    <img src="../PROJECT/images/like.png" alt="Избранное" title="Избранное">
-                </a>
-                <a href="ссылка на личный кабинет">
-                    <img src="../PROJECT/images/kabinet.png" alt="Личный кабинет" title="Личный кабинет">
-                </a>
-                <a href="ссылка накорзину">
-                    <img src="../PROJECT/images/basket.png" alt="Корзина" title="Корзина">
-                </a>
-            </div>
-        </div>
-    </header>
+    <div id="about"></div>
+    <script>
+        fetch('HEADER.html')
+            .then(response => response.text())
+            .then(html => document.getElementById('about').innerHTML = html);
+    </script>
     <div class="page">
         <div class="container">
             <a href="../PROJECT/project.html">Главная</a>
@@ -41,30 +24,161 @@
             <span>Каталог</span>
         </div>
     </div>
-    <div class="catalog" >
+    <div class="catalog">
         <div class="container">
-            <p id="Lighthaus container">Каталог</p>
+            <p id="Lighthaus">Каталог</p>
             <div>
-                <a href="ссылка на каталог">
-                    <img src="../PROJECT/images/catalog/1.png" alt="фото">
+                <a href="../PROJECT/katalog.html">
+                    <img src="../PROJECT/images/ourProducts/image 12.jpg" alt="фото" title="Фото">
                     <span>Для эфирных масел</span>
                 </a>
-                <a href="ссылка на каталог">
-                    <img src="../PROJECT/images/catalog/2.png" alt="фото">
+                <a href="../PROJECT/katalog.html">
+                    <img src="../PROJECT/images/ourProducts/image 9.jpg" alt="фото" title="Фото">
                     <span>Для гидролатов</span>
                 </a>
-                <a href="ссылка на каталог">
-                    <img src="../PROJECT/images/catalog/3.png" alt="фото">
+                <a href="../PROJECT/katalog.html">
+                    <img src="../PROJECT/images/ourProducts/image 10.jpg" alt="фото" title="Фото">
                     <span>Медная посуда</span>
                 </a>
-                <a href="ссылка на каталог">
-                    <img src="../PROJECT/images/catalog/4.png" alt="фото">
+                <a href="../PROJECT/katalog.html">
+                    <picture >
+                        <source media="(max-width: 565px )" srcset="../PROJECT/images/ourProducts/image 14.jpg">
+                        <img src="../PROJECT/images/ourProducts/image 15.jpg" alt="фото" title="Фото">
+                    </picture>
                     <span>Аксессуары из меди</span>
                 </a>
             </div>
             <hr>
+            <form action="http://fe.it-academy.by/TestForm.php" method="get">
+                <div class="search">
+                    <input name="s" placeholder="Поиск" type="search">
+                    <button type="submit"></button>
+                </div>
+                <div class="sorting">
+                    <span>Сортировка:</span>
+                    <select name="sorting">
+                        <option value="price">По цене</option>
+                        <option value="name">По названию</option>
+                    </select>
+                </div>
+            </form>
+            <div>
+                <a id="link" href="../PROJECT/card.html">
+                    <img id="ph1" src="../PROJECT/images/ourProducts/image 12.jpg" alt="фото" title="Фото">
+                    <img id="ph2" src="../PROJECT/images/ourProducts/heart.svg" alt="Избранное" title="Фото">
+                    <span><span>Медный чайник с<br> фарфоровой ручкой</span>
+                        <span>1 953 грн</span></span>
+                </a>
+                <a id="link" href="../PROJECT/card.html">
+                    <img id="ph1" src="../PROJECT/images/ourProducts/image 9.jpg" alt="фото" title="Фото">
+                    <img id="ph2" src="../PROJECT/images/ourProducts/heart.svg" alt="Избранное" title="Фото">
+                    <span><span>Медный чайник с<br> фарфоровой ручкой</span>
+                        <span>1 953 грн</span></span></a>
+
+                <a id="link" href="../PROJECT/card.html">
+                    <img id="ph1" src="../PROJECT/images/ourProducts/image 10.jpg" alt="фото" title="Фото">
+                    <img id="ph2" src="../PROJECT/images/ourProducts/heart.svg" alt="Избранное" title="Фото">
+                    <span><span>Медный чайник с<br> фарфоровой ручкой</span>
+                        <span>1 953 грн</span></span></a>
+                <a id="link" href="../PROJECT/card.html">
+                    <img id="ph1" src="../PROJECT/images/ourProducts/image 12.jpg" alt="фото" title="Фото">
+                    <img id="ph2" src="../PROJECT/images/ourProducts/heart.svg" alt="Избранное" title="Фото">
+                    <img id="ph3" src="../PROJECT/images/ourProducts/sale.jpg" alt="Скидка" title="Фото">
+                    <span>
+                        <span>Медный чайник с<br> фарфоровой ручкой</span>
+                        <span>
+                            <span>1 953 грн</span>
+                            <span>1 953 грн</span>
+                        </span>
+                    </span>
+                </a>
+                <a id="link" href="../PROJECT/card.html">
+                    <img id="ph1" src="../PROJECT/images/ourProducts/image 9.jpg" alt="фото" title="Фото" title="Фото">
+                    <img id="ph2" src="../PROJECT/images/ourProducts/heart.svg" alt="Избранное" title="Фото" title="Фото">
+                    <span><span>Медный чайник с<br> фарфоровой ручкой</span>
+                        <span>1 953 грн</span></span>
+                </a>
+                <a id="link" href="../PROJECT/card.html">
+                    <img id="ph1" src="../PROJECT/images/ourProducts/image 10.jpg" alt="фото" title="Фото">
+                    <img id="ph2" src="../PROJECT/images/ourProducts/heart.svg" alt="Избранное" title="Фото">
+                    <span><span>Медный чайник с<br> фарфоровой ручкой</span>
+                        <span>1 953 грн</span></span>
+                </a>
+                <a id="link" href="../PROJECT/card.html">
+                    <img id="ph1" src="../PROJECT/images/ourProducts/image 12.jpg" alt="фото" title="Фото">
+                    <img id="ph2" src="../PROJECT/images/ourProducts/heart.svg" alt="Избранное" title="Фото">
+                    <img id="ph3" src="../PROJECT/images/ourProducts/sale.jpg" alt="Скидка" title="Фото">
+                    <span>
+                        <span>Медный чайник с<br> фарфоровой ручкой</span>
+                        <span>
+                            <span>1 953 грн</span>
+                            <span>1 953 грн</span>
+                        </span>
+                    </span>
+                </a>
+                <a id="link" href="../PROJECT/card.html">
+                    <img id="ph1" src="../PROJECT/images/ourProducts/image 9.jpg" alt="фото" title="Фото">
+                    <img id="ph2" src="../PROJECT/images/ourProducts/heart.svg" alt="Избранное" title="Фото">
+                    <span><span>Медный чайник с<br> фарфоровой ручкой</span>
+                        <span>1 953 грн</span></span>
+                </a>
+                <a id="link" href="../PROJECT/card.html">
+                    <img id="ph1" src="../PROJECT/images/ourProducts/image 10.jpg" alt="фото" title="Фото">
+                    <img id="ph2" src="../PROJECT/images/ourProducts/heart.svg" alt="Избранное" title="Фото">
+                    <span><span>Медный чайник с<br> фарфоровой ручкой</span>
+                        <span>1 953 грн</span></span>
+                </a>
+            </div>
+
+          
         </div>
     </div>
+    </div>
+    <footer>
+        <div class="container">
+            <div>
+                <img src="../PROJECT/images/logo.png" alt="Логотип" title="Логотип">
+                <p id="foot">&copy; 2021 “Copper Pro”<br>
+                    Все права защищенны</p><br>
+                <a href="../PROJECT/project.html">Политика конфиденциальности</a>
+            </div>
+            <div>
+                <div>
+                    <nav>
+                        <p>Навигация</p>
+                        <a href="../PROJECT/katalog.html">Каталог</a>
+                        <a href="../PROJECT/katalog.html">Новости</a>
+                        <a href="../PROJECT/katalog.html">Доставка</a>
+                        <a href="../PROJECT/aboutus.html">О нас</a>
+                        <a href="../PROJECT/katalog.html">Контакты</a>
+                    </nav>
+                </div>
+                <div>
+                    <nav>
+                        <p>Каталог</p>
+                        <a href="../PROJECT/katalog.html">Для эфирных масел</a>
+                        <a href="../PROJECT/katalog.html">Для гидролатов</a>
+                        <a href="../PROJECT/katalog.html">Медная посуда</a>
+                        <a href="../PROJECT/katalog.html">Аксессуары из меди</a>
+                        <a href="../PROJECT/katalog.html">Индивидуальный заказ</a>
+                        <a href="../PROJECT/katalog.html">Скидки и предложения</a>
+                    </nav>
+                </div>
+                <div>
+                    <p>Контакты</p>
+                    <p>Бажана 8-Б, Киев,<br>
+                        02132 Украина</p>
+                    <p>+38 (096) 990 67 56</p>
+                    <a href="">a.alambik@gmail.com</a>
+                    <img src="../PROJECT/images/82.png" alt="Соц сети" title="Соц сети">
+                </div>
+
+            </div>
+        </div>
+        <a href="#top">ВВЕРХ</a>
+        
+    </footer>
+
 </body>
 
 </html>

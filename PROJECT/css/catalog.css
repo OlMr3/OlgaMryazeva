@@ -1,5 +1,6 @@
 .catalog {
     padding-top: 25px;
+    padding-bottom: 25px;
 }
 
 .catalog .container p {
@@ -12,9 +13,10 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    align-items: baseline;
 }
 
-.catalog .container div a {
+.catalog .container div:nth-child(2) a {
     display: flex;
     align-items: end;
     width: calc(25% - 20px);
@@ -22,9 +24,11 @@
     margin-bottom: 30px;
     box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.1);
     position: relative;
+    transition: transform 0.5s
 }
+.catalog .container div:nth-child(2) a:hover{transform: scale(1.1);}
 
-.catalog .container div a img {
+.catalog .container div:nth-child(2) a img, a picture {
     position: absolute;
     z-index: -1;
     left: 0;
@@ -34,7 +38,7 @@
     object-fit: cover;
 }
 
-div.catalog div.container div>a>span {
+div.catalog div.container div:nth-child(2)>a>span {
     width: 100%;
     padding: 70px 40px 27px 40px;
     font-size: 20px;
@@ -42,4 +46,91 @@ div.catalog div.container div>a>span {
     background-image: linear-gradient(180deg, #072c2600 0%, #072c269b 100%);
     color: white;
 }
-hr{color: #EBEBEB;}
+
+hr {
+    color: #EBEBEB;
+}
+
+div.catalog div.container form {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+}
+
+.search {
+    display: flex;
+    justify-content: space-between;
+    width: 230px;
+    /* Ширина поля с кнопкой */
+    border-bottom: 1px solid #031412;
+    /* Параметры рамки */
+    min-height: 20px;
+    /* Минимальная высота */
+}
+
+input[type="search"] {
+    border: none;
+    /* Убираем рамку */
+    outline: none;
+    /* Убираем свечение в Chrome и Safari */
+    -webkit-appearance: none;
+    /* Убираем рамку в Chrome и Safari */
+    width: 210px;
+    /* Ширина поля */
+    vertical-align: middle;
+    /* Выравнивание по середине */
+}
+
+input[placeholder='Поиск'] {
+    font: 20px 'Mont';
+    line-height: 96.4%;
+    color: #031412;
+}
+
+button[type="submit"] {
+    width: 20px;
+    /* Ширина кнопки */
+    height: 20px;
+    /* Высота кнопки */
+    border: none;
+    /* Убираем рамку */
+    background: url('../images/catalog/lupa.png') no-repeat right;
+    /* Параметры фона */
+}
+
+.sorting span {
+    font-size: 20px;
+    margin-right: 18px;
+}
+
+.sorting select {
+    border: none;
+    font: bold 20px 'Mont';
+    line-height: 96.4%;
+    width: 100px;
+}
+
+div.catalog div.container div:nth-child(5) {
+    padding-top: 35px;
+}
+
+div.catalog div.container div:nth-child(5) a#link {
+    margin-bottom: 45px;
+}
+@media all and (max-width: 1420px){
+    .catalog .container div:nth-child(2) a{width: calc(50% - 20px);}
+    a#link {width: calc(50% - 50px); height: 480px;}
+    div.catalog div.container div:nth-child(5) a#link:nth-child(3n+1){display: none;}
+    img#ph1{height: 390px;}
+}
+@media all and (max-width: 920px){
+    .catalog .container div {
+        align-items: normal;}
+    .catalog .container div:nth-child(2) a{height: 240px;}
+    a#link {width: calc(100% - 5px); height: 465px;}
+    img#ph1{height: 375px;}
+}
+@media all and (max-width: 565px) {
+    .catalog .container div:nth-child(2) a{width: calc(100% - 20px);}
+    a#link>span>span:last-child{text-align: end;}
+}

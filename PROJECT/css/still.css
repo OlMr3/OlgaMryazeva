@@ -24,16 +24,16 @@
     justify-content: space-between;
 }
 
-.still .container a#link {
+/*.still .container*/ a#link {
     position: relative;
     width: calc(33.333% - 20px);
     height: 550px;
     margin-bottom: 30px;
     transition: transform 0.5s
 }
-.still .container a#link:hover{transform: scale(1.1);}
+/*.still .container*/ a#link:hover{transform: scale(1.1);}
 
-.still .container a img#ph1 {
+/*.still .container*/ img#ph1 {
     position: relative;
     z-index: 0;
     width: 100%;
@@ -42,21 +42,21 @@
     object-fit: cover;
 }
 
-.still .container a img#ph2 {
+/*.still .container*/ img#ph2 {
     position: absolute;
     top: 0;
     right: 0;
     z-index: 1;
 }
 
-.still .container a img#ph3 {
+/*.still .container*/ img#ph3 {
     position: absolute;
     top: 28px;
     left: 0;
 }
 
 
-.still div.container a#link>span {
+/*.still div.container*/ a#link>span {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
@@ -64,20 +64,21 @@
     color: #031412;
 }
 
-.still div.container a>span>span:first-child {
+a#link>span>span:first-child {
     font-size: 20px;
 }
 
-.still div.container a>span>span:last-child {
+a#link>span>span:last-child {
     font-size: 30px;
     font-weight: bold;
 }
-.still div.container a>span>span:nth-child(2) {
+a#link>span>span:nth-child(2) {
     display: flex;
     flex-direction: column;
 }
 
-.still div.container a>span>span>span:nth-child(1) {
+a#link>span>span>span:nth-child(1)
+ {
     font-size: 20px;
     font-weight: 10;
     text-align: end;
@@ -85,7 +86,8 @@
     color: #03141290;
 }
 
-.still div.container a>span>span>span:nth-child(1)::before {
+a:link>span>span>span:nth-child(1)::before
+ {
     content: "";
     border-bottom: 3px solid #03141290;
     position: absolute;

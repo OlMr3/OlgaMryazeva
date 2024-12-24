@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../PROJECT/fonts/Lighthaus/stylesheet.css">
+    <link rel="stylesheet" href="../PROJECT/fonts/Mont/stylesheet.css">
+    <link rel="stylesheet" href="../PROJECT/css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="about"></div>
+    <script>
+        fetch('HEADER.html')
+            .then(response => response.text())
+            .then(html => document.getElementById('about').innerHTML = html);
+    </script>
+
+    <div class="about">
+        <div class="page">
+            <div class="container">
+                <a href="../PROJECT/project.html">Главная</a>
+                <span>&sol;</span>
+                <span>О нас</span>
+            </div>
+        </div>
+        <div class="container">
+            <div>
+                <p id="Lighthaus">О нас</p>
+                <hr>
+                <div>
+                    <p>Мы любим все, что<br> сделано из меди</p>
+                </div>
+                <div>
+                    <span>Иван<br> Иванов</span><br>
+
+                    <img src="../PROJECT/images/about/5.png" alt="Картинка" title="Картинка">
+                </div>
+            </div>
+            <picture>
+                <source media="(max-width: 1200px)" srcset="../PROJECT/images/about/7.png">
+                <source media="(max-width: 400px)" srcset="../PROJECT/images/about/6.png">
+                <img src="../PROJECT/images/about/1.png" alt="Картинка" title="Картинка">
+            </picture>
+        </div>
+    </div>
+    <div class="count">
+        <div class="container">
+            <div>
+                <p id="Lighthaus">Наши<br> клиенты</p>
+                <p>Мы требовательны к себе, чтобы каждый день<br> становится лучше для наших клиентов и<br> находить
+                    лучшие
+                    решения для каждого из них</p>
+            </div>
+            <div>
+                <p>Счетчик клиентов</p>
+                <p>12 346</p>
+            </div>
+        </div>
+    </div>
+    <div class="history">
+        <div class="container">
+            <div>
+                <p id="Lighthaus">Наша история</p>
+                <div>
+                    <p>Наша история начинается с доверия друг к другу и веры в свою способность отдать уникальный и
+                        ценный продукт.</p>
+                    <p>Работа началась в мае 2017 по подготовке производственного помещения. На тот момент команда
+                        состояла из 7 человек.
+                        Сначала мы производили исключительно аппараты для дистилляции алкоголя, а позже
+                        переориентировались на оборудование для
+                        экстракции эфирного масла в домашних условиях.</p>
+                    <p>Сегодня наша команда составляет около 30 человек, и мы быстро расширяем свой ассортимент
+                        продукции и географию.</p>
+                    <p>Мы открыты для новых вызовов и всегда стремимся улучшить качество нашего продукта и сервиса. Мы
+                        ориентированы на клиента
+                        и открыты для обратной связи. Мы также ценим друг друга и стремимся к укреплению нашей команды.
+                    </p>
+                    <p>Мы действительно любим медь и получаем огромное удовольствие от работы c этим металлом.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="geography">
+        <div class="container">
+            <div>
+                <p id="Lighthaus">Наша география</p>
+                <p>Наше производство находится в<br> Украине, но клиенты из более чем<br> 50 стран радуются товарам,<br>
+                    приобретенным в нашем магазине.
+                </p>
+            </div>
+            <img src="../PROJECT/images/about/map.png" alt="Карта" title="Карта">
+        </div>
+    </div>
+    <div class="values">
+        <div class="container">
+            <img src="../PROJECT/images/about/3.png" alt="Картинка" title="Картинка">
+            <div>
+                <p id="Lighthaus">Наши<br>
+                    ценности</p>
+                <p>Наше производство находится в Украине, но<br> клиенты из более чем 50 стран радуются<br> товарам,
+                    приобретенным в нашем магазине.</p>
+                <div><span>Оперативность</span></div>
+                <div><span>Качественный<br> товар и сервис</span></div>
+                <div><span>Гибкость</span></div>
+            </div>
+        </div>
+    </div>
+    <div id="whyas"></div>
+    <script>
+        fetch('why.html')
+            .then(response => response.text())
+            .then(html => document.getElementById('whyas').innerHTML = html);
+    </script>
+    <div id="choice"></div>
+    <script>
+        fetch('FOOTER.html')
+            .then(response => response.text())
+            .then(html => document.getElementById('choice').innerHTML = html);
+    </script>
+
+</body>
+
+</html>
