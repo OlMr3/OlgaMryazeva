@@ -26,9 +26,13 @@
     position: relative;
     transition: transform 0.5s
 }
-.catalog .container div:nth-child(2) a:hover{transform: scale(1.1);}
 
-.catalog .container div:nth-child(2) a img, a picture {
+.catalog .container div:nth-child(2) a:hover {
+    transform: scale(1.1);
+}
+
+.catalog .container div:nth-child(2) a img,
+a picture {
     position: absolute;
     z-index: -1;
     left: 0;
@@ -62,22 +66,22 @@ div.catalog div.container form {
     justify-content: space-between;
     width: 230px;
     border-bottom: 1px solid #031412;
-   
+
     min-height: 20px;
-   
+
 }
 
 input[type="search"] {
     border: none;
-   
+
     outline: none;
-  
+
     -webkit-appearance: none;
-   
+
     width: 210px;
-  
+
     vertical-align: middle;
-    
+
 }
 
 input[placeholder='Поиск'] {
@@ -88,13 +92,13 @@ input[placeholder='Поиск'] {
 
 button[type="submit"] {
     width: 20px;
-  
+
     height: 20px;
-   
+
     border: none;
-   
+
     background: url('../images/catalog/lupa.png') no-repeat right;
-  
+
 }
 
 .sorting span {
@@ -116,27 +120,76 @@ div.catalog div.container div:nth-child(5) {
 div.catalog div.container div:nth-child(5) a#link {
     margin-bottom: 45px;
 }
-@media all and (max-width: 1420px){
-    .catalog .container div:nth-child(2) a{width: calc(50% - 20px);}
-    a#link {width: calc(50% - 50px); height: 480px;}
-    div.catalog div.container div:nth-child(5) a#link:nth-child(3n+1){display: none;}
-    img#ph1{height: 390px;}
+
+@media all and (max-width: 1420px) {
+    .catalog .container div:nth-child(2) a {
+        width: calc(50% - 20px);
+    }
+
+    a#link {
+        width: calc(50% - 50px);
+        height: 480px;
+    }
+
+    div.catalog div.container div:nth-child(5) a#link:nth-child(3n+1) {
+        display: none;
+    }
+
+    img#ph1 {
+        height: 390px;
+    }
 }
-@media all and (max-width: 920px){
+
+@media all and (max-width: 920px) {
     .catalog .container div {
-        align-items: normal;}
-    .catalog .container div:nth-child(2) a{height: 240px;}
-    a#link {width: calc(100% - 5px); height: 465px;}
-    img#ph1{height: 375px;}
+        align-items: normal;
+    }
+
+    .catalog .container div:nth-child(2) a {
+        height: 240px;
+    }
+
+    a#link {
+        width: calc(100% - 5px);
+        height: 465px;
+    }
+
+    img#ph1 {
+        height: 375px;
+    }
 }
+
 @media all and (max-width: 565px) {
-    .search {width: 170px;}
-    input[type="search"]{width: 110px;}
-    .catalog .container div {justify-content: flex-end;}
+    div.catalog div.container form {
+        flex-wrap: wrap;
+    }
+
+    input[type="search"] {
+        width: 110px;
+    }
+
+    input[placeholder='Поиск'] {
+        font-size: 15px;
+    }
+
+    .sorting {
+        margin-top: 10px;
+    }
+
     .sorting span {
-        font-size: 16px;}
-        
-.sorting select {font-size: 16px;}
- .catalog .container div:nth-child(2) a{width: calc(100% - 20px);}
-    a#link>span>span:last-child{text-align: end;}
+        font-size: 16px;
+        margin-right: 45px;
+    }
+
+    .sorting select {
+        font-size: 16px;
+    }
+
+    .catalog .container div:nth-child(2) a {
+        width: calc(100% - 20px);
+    }
+
+    a#link>span>span:last-child {
+        text-align: end;
+    }
 }
