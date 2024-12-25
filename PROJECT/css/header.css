@@ -4,10 +4,7 @@ header{width: 100%;
     top: 0;
     left: 0;
     transition: background-image 0.5s ease;
-    z-index: 5;
-
-    /*background: url('../images/footer_bg.jpg') no-repeat;*/
-  
+    z-index: 5;  
 }
 
 .menu {

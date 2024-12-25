@@ -8,7 +8,7 @@
     top: 20px;
     right: 0px;
     cursor: pointer;
-    z-index: 12; /* Увеличиваем z-index, чтобы гамбургер всегда был сверху */
+    z-index: 12; 
 }
 
 .line {
@@ -20,7 +20,7 @@
     transition: all 0.3s ease-in-out;
 }
 
-/* Стилизация крестика */
+
 .cross .line:nth-child(1) {
     transform: rotate(45deg) translate(6px, 7px);
 }
@@ -36,9 +36,9 @@
 .sidebar {
     position: fixed;
     top: 0;
-    right: -100vw; /* Скрываем меню за правым краем экрана */
-    width: 100vw; /* Ширина меню - вся ширина экрана */
-    height: 100vh; /* Высота меню - вся высота экрана */
+    right: -100vw; 
+    width: 100vw; 
+    height: 100vh; 
     background: linear-gradient(90deg, #A16D4B, #E4A16F 91%);
     color: white;
     text-align: center;
@@ -66,10 +66,10 @@
 }
 
 .open {
-    transform: translateX(-100vw); /* Открытие меню на весь экран */
+    transform: translateX(-100vw); 
 }
 
-/* Затемнённый фон при открытом меню */
+
 .bg-overlay {
     position: fixed;
     top: 0;
