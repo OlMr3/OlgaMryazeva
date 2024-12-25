@@ -230,7 +230,7 @@
 }
 
 @media all and (max-width: 565px) {
-
+    .basket{padding-bottom: 20px;}
     .card>div.container>div:nth-child(3)>p#Lighthaus,
     .description>div.container>p#Lighthaus,
     .reviews>div.container>p#Lighthaus,
@@ -244,4 +244,5 @@
     .list>div>div:nth-child(3)>button, .list>div>div:nth-child(5)>button{position: absolute;}
     .basket>div.container>div.list>div:nth-child(2){display: block;}
     .delivery>form>button#base, .list>div:nth-child(1)>form>button#base{width: 220px; left: 20px;} 
+    .list>div:nth-child(1)>form>button#base{bottom: 0;}
 }
