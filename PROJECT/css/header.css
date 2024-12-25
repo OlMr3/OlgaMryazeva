@@ -61,7 +61,7 @@ header.content, header.header{background: url('../images/footer_bg.jpg') no-repe
     display: none;
 }
 
-header.content>div.menu>div {
+header.content>div.menu>div:nth-child(2) {
     display: none;
 }
 
