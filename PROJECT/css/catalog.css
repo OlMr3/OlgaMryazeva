@@ -188,8 +188,11 @@ div.catalog div.container div:nth-child(5) a#link {
     .catalog .container div:nth-child(2) a {
         width: calc(100% - 20px);
     }
+    a#link>span>span:first-child {
+        font-size: 18px;}
 
     a#link>span>span:last-child {
+        font-size: 24px;
         text-align: end;
     }
 }
