@@ -12,12 +12,48 @@
 </head>
 
 <body>
-    <div id="about"></div>
-    <script>
-        fetch('HEADER.html')
-            .then(response => response.text())
-            .then(html => document.getElementById('about').innerHTML = html);
-    </script>
+     <header class="header" >
+        <div class="container menu">
+            <nav>
+                <a href="../PROJECT/project.html"><img src="../PROJECT/images/logo.png" alt="Логотип"
+                        title="Copper pro"></a>
+                <a href="../PROJECT/katalog.html">Каталог</a>
+                <a href="../PROJECT/project.html">Новости</a>
+                <a href="../PROJECT/project.html">Доставка</a>
+                <a href="../PROJECT/project.html">О нас</a>
+                <a href="../PROJECT/project.html">Контакты</a>
+            </nav>
+            <div>
+                <a href="../PROJECT/basket.html">
+                    <img src="../PROJECT/images/like.png" alt="Избранное" title="Избранное">
+                </a>
+                <a href="../PROJECT/project.html">
+                    <img src="../PROJECT/images/kabinet.png" alt="Личный кабинет" title="Личный кабинет">
+                </a>
+                <a href="./basket.html">
+                    <img src="../PROJECT/images/basket.png" alt="Корзина" title="Корзина">
+                </a>
+            </div>
+            <div class="hamb">
+                <div class="hamburger" id="hamburger">
+                    <span class="line"></span>
+                    <span class="line"></span>
+                    <span class="line"></span>
+                </div>
+                <!-- Меню -->
+                <nav class="sidebar" id="sidebar">
+                    <ul>
+                        <li><a href="../PROJECT/katalog.html">Каталог</a></li>
+                        <li><a href="../PROJECT/project.html">Новости</a></li>
+                        <li><a href="../PROJECT/project.html">Доставка</a></li>
+                        <li><a href="../PROJECT/aboutus.html">О нас</a></li>
+                        <li><a href="../PROJECT/project.html">Контакты</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <script src="../PROJECT/js/hamburger.js"></script>
+        </div>
+    </header>
     <div class="page">
         <div class="container">
             <a href="../PROJECT/project.html">Главная</a>

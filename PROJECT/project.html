@@ -14,25 +14,44 @@
 <body>
     <header id="header">
         <div class="container menu">
-        <nav>
-            <a href="../PROJECT/project.html"><img src="../PROJECT/images/logo.png" alt="Логотип" title="Copper pro"></a>
-            <a href="../PROJECT/katalog.html">Каталог</a>
-            <a href="../PROJECT/project.html">Новости</a>
-            <a href="../PROJECT/project.html">Доставка</a>
-            <a href="../PROJECT/project.html">О нас</a>
-            <a href="../PROJECT/project.html">Контакты</a>
-        </nav>
-        <div>
-            <a href="../PROJECT/basket.html">
-                <img src="../PROJECT/images/like.png" alt="Избранное" title="Избранное">
-            </a>
-            <a href="../PROJECT/project.html">
-                <img src="../PROJECT/images/kabinet.png" alt="Личный кабинет" title="Личный кабинет">
-            </a>
-            <a href="./basket.html">
-                <img src="../PROJECT/images/basket.png" alt="Корзина" title="Корзина">
-            </a>
-        </div>
+            <nav>
+                <a href="../PROJECT/project.html"><img src="../PROJECT/images/logo.png" alt="Логотип"
+                        title="Copper pro"></a>
+                <a href="../PROJECT/katalog.html">Каталог</a>
+                <a href="../PROJECT/project.html">Новости</a>
+                <a href="../PROJECT/project.html">Доставка</a>
+                <a href="../PROJECT/project.html">О нас</a>
+                <a href="../PROJECT/project.html">Контакты</a>
+            </nav>
+            <div>
+                <a href="../PROJECT/basket.html">
+                    <img src="../PROJECT/images/like.png" alt="Избранное" title="Избранное">
+                </a>
+                <a href="../PROJECT/project.html">
+                    <img src="../PROJECT/images/kabinet.png" alt="Личный кабинет" title="Личный кабинет">
+                </a>
+                <a href="./basket.html">
+                    <img src="../PROJECT/images/basket.png" alt="Корзина" title="Корзина">
+                </a>
+            </div>
+            <div class="hamb">
+                <div class="hamburger" id="hamburger">
+                    <span class="line"></span>
+                    <span class="line"></span>
+                    <span class="line"></span>
+                </div>
+                <!-- Меню -->
+                <nav class="sidebar" id="sidebar">
+                    <ul>
+                        <li><a href="../PROJECT/katalog.html">Каталог</a></li>
+                        <li><a href="../PROJECT/project.html">Новости</a></li>
+                        <li><a href="../PROJECT/project.html">Доставка</a></li>
+                        <li><a href="../PROJECT/aboutus.html">О нас</a></li>
+                        <li><a href="../PROJECT/project.html">Контакты</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <script src="../PROJECT/js/hamburger.js"></script>
         </div>
     </header>
     <div class="head">
@@ -54,9 +73,11 @@
             <source media="(max-width: 1595px)" srcset="../PROJECT/images/BG1.png">
             <source media="(max-width: 1520px)" srcset="../PROJECT/images/BG2.png">
             <source media="(max-width: 1350px)" srcset="../PROJECT/images/BG3.png">
+            <source media="(max-width: 770px)" srcset="../PROJECT/images/BG5.png">
             <source media="(max-width: 330px)" srcset="../PROJECT/images/BG4.png">
             <img src="../PROJECT/images/BG.png" alt="Фон" title="Фон">
         </picture>
+        <p id="Lighthaus">copper<br> pro</p>
     </div>
     <div class="still ourProducts">
         <p id="Lighthaus">наша продукция</p>
@@ -112,7 +133,7 @@
             <button id="base">Перейти в каталог</button>
         </form>
     </div>
-    <div class="still">
+    <div class="still new">
         <p id="Lighthaus">новинки</p>
         <div class="container">
             <a id="link" href="../PROJECT/katalog.html">
@@ -153,7 +174,7 @@
             </form>
         </div>
     </div>
-    <div class="still">
+    <div class="still new">
         <p id="Lighthaus">мы рекомендуем</p>
         <div class="container">
             <a id="link" href="../PROJECT/katalog.html">
@@ -338,12 +359,12 @@
             </div>
         </div>
     </div>
-   
+
     <footer>
         <div class="container">
             <div>
                 <img src="../PROJECT/images/logo.png" alt="Логотип" title="Логотип">
-                <p>&copy; 2021 “Copper Pro”<br>
+                <p id="foot">&copy; 2021 “Copper Pro”<br>
                     Все права защищенны</p><br>
                 <a href="../PROJECT/project.html">Политика конфиденциальности</a>
             </div>
@@ -381,7 +402,7 @@
             </div>
         </div>
         <a href="#top">ВВЕРХ</a>
-        
+
     </footer>
 
 

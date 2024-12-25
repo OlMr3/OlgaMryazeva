@@ -1,6 +1,8 @@
-@import url('../css/header.css');
+
 @import url('../css/reset.css');
 @import url('../css/default.css');
+@import url('../css/header.css');
+@import url('../css/hamburger.css');
 @import url('../css/head.css');
 @import url('../css/still.css');
 @import url('../css/ourProducts.css');

@@ -11,12 +11,48 @@
 </head>
 
 <body>
-    <div id="about"></div>
-    <script>
-        fetch('HEADER.html')
-            .then(response => response.text())
-            .then(html => document.getElementById('about').innerHTML = html);
-    </script>
+    <header class="header" >
+        <div class="container menu">
+            <nav>
+                <a href="../PROJECT/project.html"><img src="../PROJECT/images/logo.png" alt="Логотип"
+                        title="Copper pro"></a>
+                <a href="../PROJECT/katalog.html">Каталог</a>
+                <a href="../PROJECT/project.html">Новости</a>
+                <a href="../PROJECT/project.html">Доставка</a>
+                <a href="../PROJECT/project.html">О нас</a>
+                <a href="../PROJECT/project.html">Контакты</a>
+            </nav>
+            <div>
+                <a href="../PROJECT/basket.html">
+                    <img src="../PROJECT/images/like.png" alt="Избранное" title="Избранное">
+                </a>
+                <a href="../PROJECT/project.html">
+                    <img src="../PROJECT/images/kabinet.png" alt="Личный кабинет" title="Личный кабинет">
+                </a>
+                <a href="./basket.html">
+                    <img src="../PROJECT/images/basket.png" alt="Корзина" title="Корзина">
+                </a>
+            </div>
+            <div class="hamb">
+                <div class="hamburger" id="hamburger">
+                    <span class="line"></span>
+                    <span class="line"></span>
+                    <span class="line"></span>
+                </div>
+                <!-- Меню -->
+                <nav class="sidebar" id="sidebar">
+                    <ul>
+                        <li><a href="../PROJECT/katalog.html">Каталог</a></li>
+                        <li><a href="../PROJECT/project.html">Новости</a></li>
+                        <li><a href="../PROJECT/project.html">Доставка</a></li>
+                        <li><a href="../PROJECT/aboutus.html">О нас</a></li>
+                        <li><a href="../PROJECT/project.html">Контакты</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <script src="../PROJECT/js/hamburger.js"></script>
+        </div>
+    </header>
 
     <div class="about">
         <div class="page">
@@ -40,7 +76,7 @@
                 </div>
             </div>
             <picture>
-                <source media="(max-width: 1200px)" srcset="../PROJECT/images/about/7.png">
+                <source media="(max-width: 1420px)" srcset="../PROJECT/images/about/7.png">
                 <source media="(max-width: 400px)" srcset="../PROJECT/images/about/6.png">
                 <img src="../PROJECT/images/about/1.png" alt="Картинка" title="Картинка">
             </picture>
@@ -49,10 +85,10 @@
     <div class="count">
         <div class="container">
             <div>
-                <p id="Lighthaus">Наши<br> клиенты</p>
-                <p>Мы требовательны к себе, чтобы каждый день<br> становится лучше для наших клиентов и<br> находить
+                <p id="Lighthaus">Наши клиенты</p>
+                <p>Мы требовательны к себе, чтобы каждый день становится<br> лучше для наших клиентов и находить
                     лучшие
-                    решения для каждого из них</p>
+                    решения для<br> каждого из них</p>
             </div>
             <div>
                 <p>Счетчик клиентов</p>
@@ -87,7 +123,7 @@
         <div class="container">
             <div>
                 <p id="Lighthaus">Наша география</p>
-                <p>Наше производство находится в<br> Украине, но клиенты из более чем<br> 50 стран радуются товарам,<br>
+                <p>Наше производство находится в Украине, но клиенты из более чем 50 стран радуются товарам,
                     приобретенным в нашем магазине.
                 </p>
             </div>
@@ -96,7 +132,7 @@
     </div>
     <div class="values">
         <div class="container">
-            <img src="../PROJECT/images/about/3.png" alt="Картинка" title="Картинка">
+            <img src="../PROJECT/images/about/9.png" alt="Картинка" title="Картинка">
             <div>
                 <p id="Lighthaus">Наши<br>
                     ценности</p>

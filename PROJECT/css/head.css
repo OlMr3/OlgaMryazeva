@@ -1,17 +1,15 @@
-
-.head { 
-    position: relative;
+.head {
     padding-top: 70px;
     padding-bottom: 20px;
-    min-height: 900px;
-   
+    min-height: 800px;
+
 }
 
 .hit {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    width: 700px;
+    width: calc(70% - 20px);
 }
 
 .hit>p#Lighthaus {
@@ -48,12 +46,176 @@
     margin-top: 35px;
 }
 
-.head>picture>img{position: absolute;
+.head>picture>img {
+    position: absolute;
     left: 0;
     top: 0;
     width: 100%;
-   height: 100%;
+    height: 100%;
     z-index: -1;
     object-fit: cover;
-    object-position: right bottom;
+    /*object-position: right bottom;*/
 }
+
+.head>p#Lighthaus {
+    font-size: 110px;
+    color: white;
+    position: absolute;
+    bottom: 0px;
+    right: 0;
+    z-index: -1;
+    text-align: end;
+}
+
+@media all and (max-width: 1420px) {
+    .hit>p#Lighthaus {
+        font-size: 70px;
+        margin-top: 60px;
+    }
+
+    .hit>img {
+        width: 500px;
+    }
+
+    .head>p#Lighthaus {
+        display: none;
+    }
+
+    div.ourProducts {
+        padding-top: 0px;
+    }
+
+    div.ourProducts .container>a {
+        height: 360px;
+    }
+
+    .fon .container>a:nth-child(1),
+    .new .container>a:nth-child(1) {
+        display: none;
+    }
+
+    div.profit {
+        background: url(../images/profit/44.png) no-repeat 64% 19%,
+            url(../images/profit/1.png) no-repeat 62% bottom,
+            url(../images/profit/2.png) no-repeat 50%,
+            radial-gradient(ellipse farthest-corner at 90% 90%, #0b3f3700, #0B3F37, #cb8e62);
+        height: 483px;
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+
+    div.still button {
+        margin-top: 20px;
+    }
+}
+
+@media all and (max-width: 930px) {
+    .hit>p#Lighthaus {
+        font-size: 45px;
+    }
+
+    .hit>img {
+        width: 350px;
+    }
+
+    .hit>p:nth-child(3) {
+        font-size: 30px;
+    }
+
+    .hit>div {
+        width: 200px;
+    }
+
+    .hit>div>p {
+        font-size: 20px;
+    }
+
+    .hit>form>button#base {
+        width: 200px;
+    }
+
+    div.ourProducts .container>a {
+        width: calc(100% - 100px);
+        height: 440px;
+    }
+
+    .ourProducts>div.container>a>span {
+        font-size: 20px;
+    }
+
+    .profit div.container p#Lighthaus {
+        font-size: 65px;
+    }
+
+    .profit div.container p:nth-child(2) {
+        font-size: 16px;
+    }
+
+    .profit div.container>form>button#base {
+        width: 200px;
+    }
+
+    div.still .container {
+        justify-content: center;
+    }
+}
+
+@media all and (max-width: 565px) {
+    .hit>p#Lighthaus {
+        font-size: 27px;
+    }
+
+    .hit>img {
+        width: 250px;
+        height: 1px;
+    }
+
+    .hit>p:nth-child(3) {
+        font-size: 20px;
+    }
+
+    .hit>div {
+        width: 150px;
+    }
+
+    .hit>div>p {
+        font-size: 16px;
+    }
+
+    .hit>form>button#base {
+        width: 150px;
+    }
+
+    div.ourProducts .container>a {
+        height: 250px;
+    }
+
+    .ourProducts>div.container>a>span {
+        font-size: 18px;
+    }
+    .fon .container>a#link>span>span:first-child, div.new .container>a#link>span>span:first-child {
+        font-size: 18px;
+    }
+    .fon .container>a#link>span>span:last-child, div.new .container>a#link>span>span:last-child {
+        font-size: 25px;}
+        div.profit {
+            background: url('../images/profit/5.png') no-repeat 50% bottom,
+            url('../images/profit/2.png') no-repeat 66%, 
+            radial-gradient(ellipse farthest-corner at 90% 90%, #0b3f3700, #0B3F37, #cb8e62);
+            height: 483px;
+            padding-top: 40px;
+            padding-bottom: 80px;
+        }
+        .profit div.container p#Lighthaus {
+            font-size: 60px;
+        }
+        .profit div.container p:nth-child(2) {
+            font-size: 14px;
+            margin-top: 20px;
+        }
+        .profit div.container>form>button#base {
+            width: 300px;
+            margin-top: 30px;
+        }
+        div.new{padding-top: 40px;}
+    }

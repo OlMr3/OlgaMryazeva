@@ -1,0 +1,87 @@
+.hamb{display: none; }
+@media all and (max-width: 565px) {
+    .hamb{display: block;}
+}
+.hamburger {
+   
+    position: fixed;
+    top: 20px;
+    right: 0px;
+    cursor: pointer;
+    z-index: 12; /* Увеличиваем z-index, чтобы гамбургер всегда был сверху */
+}
+
+.line {
+    display: block;
+    width: 25px;
+    height: 2px;
+    background-color: white;
+    margin-bottom: 4px;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Стилизация крестика */
+.cross .line:nth-child(1) {
+    transform: rotate(45deg) translate(6px, 7px);
+}
+
+.cross .line:nth-child(2) {
+    opacity: 0;
+}
+
+.cross .line:nth-child(3) {
+    transform: rotate(-45deg) translate(6px, -7px);
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: -100vw; /* Скрываем меню за правым краем экрана */
+    width: 100vw; /* Ширина меню - вся ширина экрана */
+    height: 100vh; /* Высота меню - вся высота экрана */
+    background: linear-gradient(90deg, #A16D4B, #E4A16F 91%);
+    color: white;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+    z-index: 11;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 50px 0;
+}
+
+.sidebar li a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 15px;
+    transition: transform 0.5s
+}
+
+.sidebar li a:hover {
+    transform: scale(1.1);
+}
+
+.open {
+    transform: translateX(-100vw); /* Открытие меню на весь экран */
+}
+
+/* Затемнённый фон при открытом меню */
+.bg-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease-in-out;
+    z-index: 10;
+}
+
+.open ~ .bg-overlay {
+    opacity: 1;
+    visibility: visible;
+}

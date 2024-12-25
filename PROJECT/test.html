@@ -17,8 +17,12 @@ body {
     font-family: Arial, sans-serif;
     overflow-x: hidden;
 }
-
+.hamb{display: none;}
+@media all and (max-width: 565px) {
+    .hamb{display: block;}
+}
 .hamburger {
+    background: linear-gradient(90deg, #A16D4B, #E4A16F 91%);
     position: fixed;
     top: 20px;
     right: 30px;
@@ -30,7 +34,7 @@ body {
     display: block;
     width: 25px;
     height: 3px;
-    background-color: black;
+    background-color: white;
     margin-bottom: 4px;
     transition: all 0.3s ease-in-out;
 }
@@ -54,8 +58,9 @@ body {
     right: -100vw; /* Скрываем меню за правым краем экрана */
     width: 100vw; /* Ширина меню - вся ширина экрана */
     height: 100vh; /* Высота меню - вся высота экрана */
-    background-color: #333;
+    background: linear-gradient(90deg, #A16D4B, #E4A16F 91%);
     color: white;
+    text-align: center;
     transition: all 0.3s ease-in-out;
     z-index: 11;
 }
@@ -70,10 +75,11 @@ body {
     text-decoration: none;
     color: white;
     padding: 15px;
+    transition: transform 0.5s
 }
 
 .sidebar li a:hover {
-    background-color: #555;
+    transform: scale(1.1);
 }
 
 .open {
@@ -100,7 +106,8 @@ body {
 }
 </style>
 <body>
-    <!-- Гамбургер -->
+    <div class="hamb">
+        <!-- Гамбургер -->
     <div class="hamburger" id="hamburger">
         <span class="line"></span>
         <span class="line"></span>
@@ -110,12 +117,15 @@ body {
     <!-- Меню -->
     <nav class="sidebar" id="sidebar">
         <ul>
-            <li><a href="#">Главная</a></li>
-            <li><a href="#">О нас</a></li>
-            <li><a href="#">Услуги</a></li>
-            <li><a href="#">Контакты</a></li>
+            <li><a href="../PROJECT/katalog.html">Каталог</a></li>
+            <li><a href="../PROJECT/project.html">Новости</a></li>
+            <li><a href="../PROJECT/project.html">Доставка</a></li>
+            <li><a href="../PROJECT/aboutus.html">О нас</a></li>
+            <li><a href="../PROJECT/project.html">Контакты</a></li>
         </ul>
     </nav>
+    </div>
+    
 
     <script>const hamburger = document.getElementById('hamburger');
         const sidebar = document.getElementById('sidebar');

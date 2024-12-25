@@ -22,7 +22,7 @@
     object-fit: cover;
 }
 
-div.ourProducts div.container>a>span {
+.ourProducts .container>a>span {
     width: 100%;
     padding: 70px 40px 27px 40px;
     font-size: 30px;

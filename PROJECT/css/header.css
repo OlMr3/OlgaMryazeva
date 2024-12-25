@@ -1,6 +1,5 @@
 header{width: 100%;
     height: 85px;
-  
     position: fixed;
     top: 0;
     left: 0;
@@ -56,20 +55,20 @@ header{width: 100%;
 .menu>div:last-child>a>img:hover {
     transform: scale(1.2);
 }
-#content>header, #about>header{background: url('../images/footer_bg.jpg') no-repeat center;background-size: cover;}
-#content div.menu>nav>a:nth-child(2),
-#content div.menu>nav>a:nth-child(3),
-#content div.menu>nav>a:nth-child(4),
-#content div.menu>nav>a:nth-child(5),
-#content div.menu>nav>a:nth-child(6) {
+header.content, header.header{background: url('../images/footer_bg.jpg') no-repeat center;background-size: cover;}
+.content div.menu>nav>a:nth-child(2),
+.content div.menu>nav>a:nth-child(3),
+.content div.menu>nav>a:nth-child(4),
+.content div.menu>nav>a:nth-child(5),
+.content div.menu>nav>a:nth-child(6) {
     display: none;
 }
 
-#content>header>div.menu>div {
+header.content>div.menu>div {
     display: none;
 }
 
-#content>header>div.menu>nav {
+header.content>div.menu>nav {
     display: block;
     margin: 0 auto;
     padding-top: 20px;
@@ -85,7 +84,7 @@ header{width: 100%;
 @media all and (max-width: 930px) {
     .menu{display: block; position: relative;}
     .menu>nav>a{margin-left: 35px;}
-    .menu>div:nth-child(2){position: absolute; top: 0; right: 0;}
+    .menu>div:nth-child(2){position: absolute; top: 0; right: 40px; z-index: 13;}
     .menu>div:nth-child(2)>a>img{height: 50px;}
     .menu>nav>a{margin-left: 40px;}
     .menu>div:last-child>a {

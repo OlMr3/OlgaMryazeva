@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+/* Основной стиль для радиокнопки */
+input[type="radio"] {
+  appearance: none;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: #ddd;
+  vertical-align: middle;
+  margin-right: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+/* Внешняя граница радиокнопки */
+input[type="radio"]::after {
+  content: '';
+  display: block;
+  width: 90%;
+  height: 90%;
+  border-radius: 50%;
+  border: 2px solid #555;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+
+/* Внутренний кружок радиокнопки */
+input[type="radio"]::before {
+  content: '';
+  display: block;
+  width: 60%;
+  height: 60%;
+  border-radius: 50%;
+  background-color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Активированное состояние радиокнопки */
+input[type="radio"]:checked {
+  background-color: blue;
+}
+
+/* Изменение цвета внутреннего кружка при активации */
+input[type="radio"]:checked::before {
+  background-color: blue;
+}
+
+/* Изменение цвета текста при активации */
+input[type="radio"]:checked + * {
+  color: red;
+}
+</style>
+<body>
+    <label><input type="radio" name="answer" value="pickup"> Самовывоз</label>
+</body>
+</html>
