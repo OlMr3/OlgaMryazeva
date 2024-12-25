@@ -55,6 +55,8 @@
     display: block;
     text-decoration: none;
     color: white;
+    font: 30px 'Mont';
+    line-height: 210.9%;
     padding: 15px;
     transition: transform 0.5s
 }
