@@ -130,6 +130,13 @@ div.catalog div.container div:nth-child(5) a#link {
     img#ph1{height: 375px;}
 }
 @media all and (max-width: 565px) {
-    .catalog .container div:nth-child(2) a{width: calc(100% - 20px);}
+    .search {width: 170px;}
+    input[type="search"]{width: 110px;}
+    .catalog .container div {justify-content: flex-end;}
+    .sorting span {
+        font-size: 16px;}
+        
+.sorting select {font-size: 16px;}
+ .catalog .container div:nth-child(2) a{width: calc(100% - 20px);}
     a#link>span>span:last-child{text-align: end;}
 }
